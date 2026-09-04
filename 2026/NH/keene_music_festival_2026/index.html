@@ -1210,7 +1210,7 @@
             return {
                 festival: {
                     ...rawData.festival,
-                    dateDisplay: rawData.festival.date ? new Date(rawData.festival.date).toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) : 'Saturday, September 5, 2026'
+                    dateDisplay: rawData.festival.date ? new Date(rawData.festival.date + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) : 'Saturday, September 5, 2026'
                 },
                 venues: transformedVenues,
                 genres: genres,
