@@ -1,0 +1,12 @@
+{
+  "defaultFestival": "2026/NH/keene_music_festival_2026",
+  "festivals": [
+    {
+      "id": "keene_music_festival_2026",
+      "name": "Keene Music Festival 2026",
+      "path": "2026/NH/keene_music_festival_2026",
+      "year": 2026,
+      "state": "NH"
+    }
+  ]
+}

@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keene Music Festival 2026 - Band Discovery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Patrick+Hand&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Patrick Hand', 'Caveat', cursive;
+            background-image: url('keene_background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: rgba(245, 230, 211, 0.85);
+            background-blend-mode: overlay;
+            color: #3d2817;
+            padding: 20px;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                radial-gradient(circle, rgba(61, 40, 23, 0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fefdf8;
+            border-radius: 3px;
+            box-shadow:
+                0 0 0 8px #f5e6d3,
+                0 0 0 10px #8b5a2b,
+                5px 5px 0 10px rgba(139, 90, 43, 0.2),
+                0 15px 40px rgba(61, 40, 23, 0.3);
+            overflow: hidden;
+            position: relative;
+            z-index: 2;
+            transform: rotate(-0.5deg);
+        }
+
+        .header {
+            background: #4a7c8e;
+            background-image:
+                repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(245, 230, 211, 0.15) 3px, rgba(245, 230, 211, 0.15) 6px),
+                repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(245, 230, 211, 0.15) 3px, rgba(245, 230, 211, 0.15) 6px);
+            color: #fefdf8;
+            padding: 50px 40px;
+            text-align: center;
+            border-bottom: 4px dashed #2d5a6b;
+            position: relative;
+        }
+
+        .header a {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .header a:hover {
+            transform: scale(1.02);
+        }
+
+        .header::after {
+            content: '♪ ♫ ♪';
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fefdf8;
+            padding: 4px 25px;
+            color: #4a7c8e;
+            font-size: 1.5em;
+        }
+
+        .header h1 {
+            font-family: 'Caveat', cursive;
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-shadow: 3px 3px 0 rgba(61, 40, 23, 0.2);
+            letter-spacing: 2px;
+            transform: rotate(-2deg);
+        }
+
+        .header p {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.4em;
+            opacity: 0.95;
+            transform: rotate(1deg);
+        }
+
+        .venues {
+            padding: 40px;
+            display: grid;
+            gap: 35px;
+        }
+
+        .venue {
+            border: 3px solid #3d2817;
+            border-radius: 20px 5px 20px 5px;
+            overflow: hidden;
+            background: #fffef9;
+            box-shadow: 4px 4px 0 rgba(61, 40, 23, 0.15);
+            position: relative;
+        }
+
+        .venue::before {
+            content: '♪';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 2em;
+            opacity: 0.1;
+            transform: rotate(25deg);
+            z-index: 0;
+        }
+
+        .venue-header {
+            padding: 25px 20px;
+            font-family: 'Caveat', cursive;
+            font-weight: 700;
+            font-size: 2em;
+            color: #fefdf8;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+            border-bottom: 3px dashed rgba(254, 253, 248, 0.4);
+        }
+
+        .venue-header::after {
+            content: '📍';
+            margin-left: 12px;
+            font-size: 0.8em;
+        }
+
+        .venue-header-link {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+        }
+
+        .venue-header.city-tire {
+            background: #e67e22;
+            background-image:
+                radial-gradient(circle at 20% 30%, rgba(254, 253, 248, 0.15) 2px, transparent 2px),
+                radial-gradient(circle at 80% 70%, rgba(254, 253, 248, 0.15) 2px, transparent 2px),
+                radial-gradient(circle at 40% 80%, rgba(254, 253, 248, 0.15) 2px, transparent 2px);
+            background-size: 40px 40px, 60px 60px, 50px 50px;
+        }
+
+        .venue-header.gallery-alley {
+            background: #a0522d;
+            background-image:
+                repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(254, 253, 248, 0.1) 2px, rgba(254, 253, 248, 0.1) 4px);
+        }
+
+        .venue-header.monadnock {
+            background: #d4a574;
+            background-image:
+                repeating-linear-gradient(45deg, transparent 0px, transparent 15px, rgba(61, 40, 23, 0.12) 15px, rgba(61, 40, 23, 0.12) 16px),
+                repeating-linear-gradient(-45deg, transparent 0px, transparent 15px, rgba(61, 40, 23, 0.12) 15px, rgba(61, 40, 23, 0.12) 16px);
+        }
+
+        .venue-header.chesterss {
+            background: #8b4513;
+            background-image:
+                radial-gradient(circle, rgba(254, 253, 248, 0.12) 1px, transparent 1px);
+            background-size: 15px 15px;
+        }
+
+        .venue-header.railroad {
+            background: #6b8e23;
+            background-image:
+                repeating-linear-gradient(0deg, transparent, transparent 8px, rgba(254, 253, 248, 0.15) 8px, rgba(254, 253, 248, 0.15) 10px),
+                repeating-linear-gradient(90deg, transparent, transparent 20px, rgba(254, 253, 248, 0.1) 20px, rgba(254, 253, 248, 0.1) 21px);
+        }
+
+        .venue-header.lamson {
+            background: #cd853f;
+            background-image:
+                repeating-linear-gradient(45deg, transparent 0px, transparent 10px, rgba(254, 253, 248, 0.15) 10px, rgba(254, 253, 248, 0.15) 11px),
+                repeating-linear-gradient(-45deg, transparent 0px, transparent 10px, rgba(254, 253, 248, 0.15) 10px, rgba(254, 253, 248, 0.15) 11px);
+        }
+
+        .venue-header.black-clover {
+            background: #556b2f;
+            background-image:
+                repeating-linear-gradient(30deg, transparent, transparent 5px, rgba(254, 253, 248, 0.1) 5px, rgba(254, 253, 248, 0.1) 6px),
+                repeating-linear-gradient(60deg, transparent, transparent 7px, rgba(254, 253, 248, 0.1) 7px, rgba(254, 253, 248, 0.1) 8px),
+                repeating-linear-gradient(120deg, transparent, transparent 6px, rgba(254, 253, 248, 0.1) 6px, rgba(254, 253, 248, 0.1) 7px);
+        }
+
+        .bands {
+            padding: 25px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 18px;
+        }
+
+        .band {
+            display: block;
+            padding: 18px 22px;
+            background: #f5e6d3;
+            border: 2px solid #3d2817;
+            border-radius: 15px 3px 15px 3px;
+            text-decoration: none;
+            color: #3d2817;
+            position: relative;
+            overflow: visible;
+            box-shadow: 2px 2px 0 rgba(61, 40, 23, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        }
+
+        .band::before {
+            content: '♪';
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 1.8em;
+            opacity: 0.15;
+            transform: rotate(-15deg);
+        }
+
+        .band:hover {
+            transform: translateY(-3px) rotate(-1deg);
+            box-shadow: 4px 5px 0 rgba(61, 40, 23, 0.25);
+            background: #ffe8c2;
+        }
+
+        .band-name {
+            font-family: 'Caveat', cursive;
+            font-weight: 600;
+            font-size: 1.4em;
+            position: relative;
+            z-index: 1;
+            line-height: 1.2;
+        }
+
+        .band-time {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1em;
+            color: #5d4a36;
+            margin-top: 8px;
+            position: relative;
+            z-index: 1;
+            opacity: 0.85;
+        }
+
+        .search-box {
+            padding: 35px 40px;
+            background: #f5e6d3;
+            border-bottom: 4px dashed #8b7355;
+            position: relative;
+        }
+
+        .search-box::after {
+            content: '♫ ♪ ♫';
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fefdf8;
+            padding: 4px 25px;
+            color: #8b7355;
+            font-size: 1.2em;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 18px 25px;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.3em;
+            border: 3px solid #8b5a2b;
+            border-radius: 15px 3px 15px 3px;
+            outline: none;
+            transition: all 0.3s ease;
+            background: #fffef9;
+            color: #3d2817;
+            box-shadow: 3px 3px 0 rgba(61, 40, 23, 0.1);
+        }
+
+        #searchInput:focus {
+            border-color: #5d4a36;
+            background: #fff;
+            box-shadow: 5px 5px 0 rgba(93, 74, 54, 0.2);
+        }
+
+        #searchInput::placeholder {
+            color: #a0826d;
+            opacity: 0.7;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .view-button {
+            padding: 12px 24px;
+            border: 3px solid #8b5a2b;
+            background: #fffef9;
+            border-radius: 20px 5px 20px 5px;
+            cursor: pointer;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.1em;
+            color: #3d2817;
+            font-weight: 600;
+            box-shadow: 2px 2px 0 rgba(61, 40, 23, 0.15);
+        }
+
+        .view-button.active {
+            background: #8b7355;
+            color: #fefdf8;
+            border-color: #5d4a36;
+            transform: rotate(-1deg);
+            box-shadow: 4px 4px 0 rgba(61, 40, 23, 0.25);
+        }
+
+        .genre-section {
+            border: 3px solid #3d2817;
+            border-radius: 20px 5px 20px 5px;
+            overflow: hidden;
+            margin-bottom: 35px;
+            background: #fffef9;
+            box-shadow: 4px 4px 0 rgba(61, 40, 23, 0.15);
+        }
+
+        .genre-header {
+            padding: 25px 20px;
+            font-family: 'Caveat', cursive;
+            font-weight: 700;
+            font-size: 2em;
+            color: #fefdf8;
+            text-align: center;
+            background: #8b7355;
+            background-image:
+                repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(254, 253, 248, 0.12) 3px, rgba(254, 253, 248, 0.12) 6px),
+                repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(254, 253, 248, 0.12) 3px, rgba(254, 253, 248, 0.12) 6px);
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+            border-bottom: 3px dashed rgba(254, 253, 248, 0.4);
+        }
+
+        .footer {
+            background: #8b7355;
+            background-image:
+                repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(245, 230, 211, 0.1) 3px, rgba(245, 230, 211, 0.1) 6px),
+                repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(245, 230, 211, 0.1) 3px, rgba(245, 230, 211, 0.1) 6px);
+            color: #fefdf8;
+            padding: 70px 40px 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            border-top: 4px dashed #5d4a36;
+            position: relative;
+        }
+
+        .footer::before {
+            content: '♪ ♫ ♪';
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fefdf8;
+            padding: 4px 25px;
+            color: #8b7355;
+            font-size: 1.5em;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .footer h2 {
+            font-family: 'Caveat', cursive;
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            transform: rotate(-1deg);
+            text-shadow: 2px 2px 0 rgba(61, 40, 23, 0.3);
+        }
+
+        .footer h3 {
+            font-family: 'Caveat', cursive;
+            transform: rotate(1deg);
+        }
+
+        .footer p {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.2em;
+            opacity: 0.95;
+            line-height: 1.7;
+        }
+
+        .footer a {
+            color: #fefdf8;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 26px;
+            background: rgba(245, 230, 211, 0.2);
+            border: 2px solid #fefdf8;
+            border-radius: 15px 3px 15px 3px;
+            width: fit-content;
+            font-family: 'Patrick Hand', cursive;
+            font-weight: 600;
+            font-size: 1.1em;
+            box-shadow: 2px 2px 0 rgba(61, 40, 23, 0.2);
+        }
+
+        .footer-poster {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-poster a {
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-poster a:hover {
+            transform: rotate(0deg) scale(1.03);
+        }
+
+        .footer-poster img {
+            max-width: 100%;
+            height: auto;
+            border: 4px solid #fefdf8;
+            border-radius: 5px;
+            box-shadow:
+                0 0 0 8px #8b5a2b,
+                8px 8px 0 8px rgba(61, 40, 23, 0.2);
+            transform: rotate(2deg);
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 2.5em;
+            }
+
+            .venue-header {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a id="playlistLink" href="#" target="_blank" rel="noopener">
+                <h1 id="festivalName">🎵 Loading...</h1>
+                <p id="festivalDate"></p>
+            </a>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for a band...">
+            <div style="margin-top: 15px; display: flex; gap: 10px; align-items: center;">
+                <label style="font-weight: 600;">View:</label>
+                <button id="venueView" class="view-button active">By Venue</button>
+                <button id="genreView" class="view-button">By Genre</button>
+            </div>
+        </div>
+
+        <div id="genreContainer" class="venues hidden"></div>
+
+        <div id="venueContainer" class="venues">
+            <!-- Venues loaded dynamically from data.json -->
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <div>
+                    <h2>🎵 Keene Music Festival 2026</h2>
+                    <p>Saturday, September 5, 2026 - Downtown Keene, NH</p>
+                    <p>Discover over 70 incredible bands across 7 unique venues in the heart of downtown Keene.</p>
+                </div>
+                <div>
+                    <h3 style="margin-bottom: 15px; font-size: 1.3em;">Links</h3>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <a href="https://explorekeene.org/" target="_blank" rel="noopener">
+                            🌆 Explore Downtown Keene
+                        </a>
+                        <a href="https://www.monadnocknh.com/" target="_blank" rel="noopener">
+                            🏔️ Monadnock Region
+                        </a>
+                    </div>
+                    <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.7;">
+                        Photo credit: <a href="https://www.monadnocknh.com/2024/04/02/dirt-glass-visit-keene/" target="_blank" rel="noopener" style="padding: 0; background: none; text-decoration: underline;">Dirt & Glass - Visit Keene</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-poster">
+                <a href="keene_music_festival.jpg" target="_blank">
+                    <img src="keene_music_festival.jpg" alt="Keene Music Festival 2026 Official Poster">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let festivalData = null;
+        let configData = null;
+
+        // Load data and initialize
+        async function init() {
+            try {
+                // Load festival data
+                const dataResponse = await fetch('data.json');
+                festivalData = await dataResponse.json();
+
+                // Load per-festival config
+                const festConfigResponse = await fetch('config.json');
+                configData = await festConfigResponse.json();
+
+                // Load root config for festival list
+                const rootConfigResponse = await fetch('../../../config.json');
+                const rootConfig = await rootConfigResponse.json();
+                configData.allFestivals = rootConfig.festivals;
+
+                // Render page
+                renderFestival();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('festivalName').textContent = '⚠️ Error loading festival data';
+            }
+        }
+
+        function renderFestival() {
+            const { festival, venues, genres, links } = festivalData;
+
+            // Update header
+            document.getElementById('festivalName').textContent = `🎵 ${festival.name}`;
+            document.getElementById('festivalDate').textContent = `${festival.dateDisplay} - ${festival.location}`;
+
+            // Set playlist link
+            const playlistLink = document.getElementById('playlistLink');
+            if (configData.playlistVideoIds && configData.playlistVideoIds.length > 0) {
+                playlistLink.href = `https://www.youtube.com/watch_videos?video_ids=${configData.playlistVideoIds.join(',')}`;
+            } else {
+                // Fallback to search
+                playlistLink.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(festival.name + ' playlist')}`;
+            }
+
+            // Render venues
+            renderVenues(venues);
+
+            // Render genres
+            renderGenres(genres, venues);
+
+            // Update footer
+            updateFooter(festival, links, configData.allFestivals);
+
+            // Initialize search and view toggle
+            initializeUI();
+        }
+
+        function renderVenues(venues) {
+            const venueContainer = document.getElementById('venueContainer');
+            venueContainer.innerHTML = '';
+
+            venues.forEach(venue => {
+                const venueDiv = document.createElement('div');
+                venueDiv.className = 'venue';
+                venueDiv.setAttribute('data-venue', venue.id);
+
+                // Venue header with Maps link
+                const venueHeaderLink = document.createElement('a');
+                venueHeaderLink.href = `https://www.google.com/maps/search/?api=1&query=${venue.mapsQuery}`;
+                venueHeaderLink.target = '_blank';
+                venueHeaderLink.className = 'venue-header-link';
+
+                const venueHeader = document.createElement('div');
+                venueHeader.className = `venue-header ${venue.id}`;
+                venueHeader.textContent = venue.name;
+
+                venueHeaderLink.appendChild(venueHeader);
+                venueDiv.appendChild(venueHeaderLink);
+
+                // Bands
+                const bandsDiv = document.createElement('div');
+                bandsDiv.className = 'bands';
+
+                venue.bands.forEach(band => {
+                    const bandLink = document.createElement('a');
+                    bandLink.href = band.youtubeLink;
+                    bandLink.target = '_blank';
+                    bandLink.className = 'band';
+                    bandLink.setAttribute('data-band', band.name);
+
+                    const bandName = document.createElement('div');
+                    bandName.className = 'band-name';
+                    bandName.textContent = band.name;
+
+                    const bandTime = document.createElement('div');
+                    bandTime.className = 'band-time';
+                    bandTime.textContent = `${band.startTime} - ${band.endTime}`;
+
+                    bandLink.appendChild(bandName);
+                    bandLink.appendChild(bandTime);
+                    bandsDiv.appendChild(bandLink);
+                });
+
+                venueDiv.appendChild(bandsDiv);
+                venueContainer.appendChild(venueDiv);
+            });
+        }
+
+        function renderGenres(genres, venues) {
+            const genreContainer = document.getElementById('genreContainer');
+            genreContainer.innerHTML = '';
+
+            Object.entries(genres).forEach(([genreName, bandNames]) => {
+                const genreSection = document.createElement('div');
+                genreSection.className = 'genre-section';
+                genreSection.setAttribute('data-genre', genreName);
+
+                const genreHeader = document.createElement('div');
+                genreHeader.className = 'genre-header';
+                genreHeader.textContent = genreName;
+                genreSection.appendChild(genreHeader);
+
+                const bandsDiv = document.createElement('div');
+                bandsDiv.className = 'bands';
+
+                // Find bands across all venues
+                bandNames.forEach(bandName => {
+                    venues.forEach(venue => {
+                        const band = venue.bands.find(b => b.name === bandName);
+                        if (band) {
+                            const bandLink = document.createElement('a');
+                            bandLink.href = band.youtubeLink;
+                            bandLink.target = '_blank';
+                            bandLink.className = 'band';
+                            bandLink.setAttribute('data-band', band.name);
+
+                            const bandNameDiv = document.createElement('div');
+                            bandNameDiv.className = 'band-name';
+                            bandNameDiv.textContent = band.name;
+
+                            const bandTime = document.createElement('div');
+                            bandTime.className = 'band-time';
+                            bandTime.textContent = `${band.startTime} - ${band.endTime}`;
+
+                            bandLink.appendChild(bandNameDiv);
+                            bandLink.appendChild(bandTime);
+                            bandsDiv.appendChild(bandLink);
+                        }
+                    });
+                });
+
+                genreSection.appendChild(bandsDiv);
+                genreContainer.appendChild(genreSection);
+            });
+        }
+
+        function updateFooter(festival, links, allFestivals) {
+            // Update footer content dynamically if needed
+            const footerContent = document.querySelector('.footer-content');
+            footerContent.querySelector('h2').textContent = `🎵 ${festival.name}`;
+            footerContent.querySelector('p').textContent = `${festival.dateDisplay} - ${festival.location}`;
+
+            // Add festival navigation
+            const linksDiv = footerContent.querySelectorAll('div')[1];
+            if (allFestivals.length > 1) {
+                const festivalNav = document.createElement('div');
+                festivalNav.style.marginTop = '20px';
+                festivalNav.innerHTML = '<h3 style="margin-bottom: 10px; font-size: 1.2em;">All Festivals</h3>';
+
+                allFestivals.forEach(fest => {
+                    const festLink = document.createElement('a');
+                    // Make path relative from current location
+                    festLink.href = `../../../${fest.path}/`;
+                    festLink.textContent = `${fest.name}`;
+                    festLink.style.display = 'block';
+                    festLink.style.marginBottom = '5px';
+                    if (fest.id === 'keene_music_festival_2026') {
+                        festLink.style.fontWeight = 'bold';
+                    }
+                    festivalNav.appendChild(festLink);
+                });
+
+                linksDiv.appendChild(festivalNav);
+            }
+        }
+
+        function initializeUI() {
+            const searchInput = document.getElementById('searchInput');
+            const venueView = document.getElementById('venueView');
+            const genreView = document.getElementById('genreView');
+            const venueContainer = document.getElementById('venueContainer');
+            const genreContainer = document.getElementById('genreContainer');
+
+            // View toggle
+            venueView.addEventListener('click', () => {
+                venueView.classList.add('active');
+                genreView.classList.remove('active');
+                venueContainer.classList.remove('hidden');
+                genreContainer.classList.add('hidden');
+            });
+
+            genreView.addEventListener('click', () => {
+                genreView.classList.add('active');
+                venueView.classList.remove('active');
+                venueContainer.classList.add('hidden');
+                genreContainer.classList.remove('hidden');
+            });
+
+            // Search functionality
+            searchInput.addEventListener('input', function(e) {
+                const searchTerm = e.target.value.toLowerCase().trim();
+                const isVenueView = !venueContainer.classList.contains('hidden');
+
+                if (searchTerm === '') {
+                    // Show all
+                    document.querySelectorAll('.venue, .genre-section, .band').forEach(el => {
+                        el.classList.remove('hidden');
+                    });
+                    return;
+                }
+
+                if (isVenueView) {
+                    const venues = document.querySelectorAll('.venue');
+                    const bands = document.querySelectorAll('#venueContainer .band');
+
+                    bands.forEach(band => {
+                        const bandName = band.getAttribute('data-band').toLowerCase();
+                        if (bandName.includes(searchTerm)) {
+                            band.classList.remove('hidden');
+                        } else {
+                            band.classList.add('hidden');
+                        }
+                    });
+
+                    venues.forEach(venue => {
+                        const visibleBands = venue.querySelectorAll('.band:not(.hidden)');
+                        if (visibleBands.length === 0) {
+                            venue.classList.add('hidden');
+                        } else {
+                            venue.classList.remove('hidden');
+                        }
+                    });
+                } else {
+                    const genreSections = document.querySelectorAll('.genre-section');
+                    const bands = document.querySelectorAll('#genreContainer .band');
+
+                    bands.forEach(band => {
+                        const bandName = band.getAttribute('data-band').toLowerCase();
+                        if (bandName.includes(searchTerm)) {
+                            band.classList.remove('hidden');
+                        } else {
+                            band.classList.add('hidden');
+                        }
+                    });
+
+                    genreSections.forEach(section => {
+                        const visibleBands = section.querySelectorAll('.band:not(.hidden)');
+                        if (visibleBands.length === 0) {
+                            section.classList.add('hidden');
+                        } else {
+                            section.classList.remove('hidden');
+                        }
+                    });
+                }
+            });
+        }
+
+        // Initialize on page load
+        init();
+    </script>
+</body>
+</html>

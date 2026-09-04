@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keene Music Festival 2026 - Band Discovery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Patrick+Hand&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Patrick Hand', 'Caveat', cursive;
+            background-image: url('https://www.monadnocknh.com/wp-content/uploads/2023/07/DG_Keene-14-819x1024.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: rgba(245, 230, 211, 0.85);
+            background-blend-mode: overlay;
+            color: #3d2817;
+            padding: 20px;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                radial-gradient(circle, rgba(61, 40, 23, 0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fefdf8;
+            border-radius: 3px;
+            box-shadow:
+                0 0 0 8px #f5e6d3,
+                0 0 0 10px #8b5a2b,
+                5px 5px 0 10px rgba(139, 90, 43, 0.2),
+                0 15px 40px rgba(61, 40, 23, 0.3);
+            overflow: hidden;
+            position: relative;
+            z-index: 2;
+            transform: rotate(-0.5deg);
+        }
+
+        .header {
+            background: #4a7c8e;
+            background-image:
+                repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(245, 230, 211, 0.15) 3px, rgba(245, 230, 211, 0.15) 6px),
+                repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(245, 230, 211, 0.15) 3px, rgba(245, 230, 211, 0.15) 6px);
+            color: #fefdf8;
+            padding: 50px 40px;
+            text-align: center;
+            border-bottom: 4px dashed #2d5a6b;
+            position: relative;
+        }
+
+        .header a {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .header a:hover {
+            transform: scale(1.02);
+        }
+
+        .header::after {
+            content: '♪ ♫ ♪';
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fefdf8;
+            padding: 4px 25px;
+            color: #4a7c8e;
+            font-size: 1.5em;
+        }
+
+        .header h1 {
+            font-family: 'Caveat', cursive;
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-shadow: 3px 3px 0 rgba(61, 40, 23, 0.2);
+            letter-spacing: 2px;
+            transform: rotate(-2deg);
+        }
+
+        .header p {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.4em;
+            opacity: 0.95;
+            transform: rotate(1deg);
+        }
+
+        .venues {
+            padding: 40px;
+            display: grid;
+            gap: 35px;
+        }
+
+        .venue {
+            border: 3px solid #3d2817;
+            border-radius: 20px 5px 20px 5px;
+            overflow: hidden;
+            background: #fffef9;
+            box-shadow: 4px 4px 0 rgba(61, 40, 23, 0.15);
+            position: relative;
+        }
+
+        .venue::before {
+            content: '♪';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 2em;
+            opacity: 0.1;
+            transform: rotate(25deg);
+            z-index: 0;
+        }
+
+        .venue-header {
+            padding: 25px 20px;
+            font-family: 'Caveat', cursive;
+            font-weight: 700;
+            font-size: 2em;
+            color: #fefdf8;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+            border-bottom: 3px dashed rgba(254, 253, 248, 0.4);
+        }
+
+        .venue-header::after {
+            content: '📍';
+            margin-left: 12px;
+            font-size: 0.8em;
+        }
+
+        .venue-header-link {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+        }
+
+        .venue-header.city-tire {
+            background: #e67e22;
+            background-image:
+                radial-gradient(circle at 20% 30%, rgba(254, 253, 248, 0.15) 2px, transparent 2px),
+                radial-gradient(circle at 80% 70%, rgba(254, 253, 248, 0.15) 2px, transparent 2px),
+                radial-gradient(circle at 40% 80%, rgba(254, 253, 248, 0.15) 2px, transparent 2px);
+            background-size: 40px 40px, 60px 60px, 50px 50px;
+        }
+
+        .venue-header.gallery-alley {
+            background: #a0522d;
+            background-image:
+                repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(254, 253, 248, 0.1) 2px, rgba(254, 253, 248, 0.1) 4px);
+        }
+
+        .venue-header.monadnock {
+            background: #d4a574;
+            background-image:
+                repeating-linear-gradient(45deg, transparent 0px, transparent 15px, rgba(61, 40, 23, 0.12) 15px, rgba(61, 40, 23, 0.12) 16px),
+                repeating-linear-gradient(-45deg, transparent 0px, transparent 15px, rgba(61, 40, 23, 0.12) 15px, rgba(61, 40, 23, 0.12) 16px);
+        }
+
+        .venue-header.chesterss {
+            background: #8b4513;
+            background-image:
+                radial-gradient(circle, rgba(254, 253, 248, 0.12) 1px, transparent 1px);
+            background-size: 15px 15px;
+        }
+
+        .venue-header.railroad {
+            background: #6b8e23;
+            background-image:
+                repeating-linear-gradient(0deg, transparent, transparent 8px, rgba(254, 253, 248, 0.15) 8px, rgba(254, 253, 248, 0.15) 10px),
+                repeating-linear-gradient(90deg, transparent, transparent 20px, rgba(254, 253, 248, 0.1) 20px, rgba(254, 253, 248, 0.1) 21px);
+        }
+
+        .venue-header.lamson {
+            background: #cd853f;
+            background-image:
+                repeating-linear-gradient(45deg, transparent 0px, transparent 10px, rgba(254, 253, 248, 0.15) 10px, rgba(254, 253, 248, 0.15) 11px),
+                repeating-linear-gradient(-45deg, transparent 0px, transparent 10px, rgba(254, 253, 248, 0.15) 10px, rgba(254, 253, 248, 0.15) 11px);
+        }
+
+        .venue-header.black-clover {
+            background: #556b2f;
+            background-image:
+                repeating-linear-gradient(30deg, transparent, transparent 5px, rgba(254, 253, 248, 0.1) 5px, rgba(254, 253, 248, 0.1) 6px),
+                repeating-linear-gradient(60deg, transparent, transparent 7px, rgba(254, 253, 248, 0.1) 7px, rgba(254, 253, 248, 0.1) 8px),
+                repeating-linear-gradient(120deg, transparent, transparent 6px, rgba(254, 253, 248, 0.1) 6px, rgba(254, 253, 248, 0.1) 7px);
+        }
+
+        .bands {
+            padding: 25px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 18px;
+        }
+
+        .band {
+            display: block;
+            padding: 18px 22px;
+            background: #f5e6d3;
+            border: 2px solid #3d2817;
+            border-radius: 15px 3px 15px 3px;
+            text-decoration: none;
+            color: #3d2817;
+            position: relative;
+            overflow: visible;
+            box-shadow: 2px 2px 0 rgba(61, 40, 23, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        }
+
+        .band::before {
+            content: '♪';
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 1.8em;
+            opacity: 0.15;
+            transform: rotate(-15deg);
+        }
+
+        .band:hover {
+            transform: translateY(-3px) rotate(-1deg);
+            box-shadow: 4px 5px 0 rgba(61, 40, 23, 0.25);
+            background: #ffe8c2;
+        }
+
+        .band-name {
+            font-family: 'Caveat', cursive;
+            font-weight: 600;
+            font-size: 1.4em;
+            position: relative;
+            z-index: 1;
+            line-height: 1.2;
+        }
+
+        .band-time {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1em;
+            color: #5d4a36;
+            margin-top: 8px;
+            position: relative;
+            z-index: 1;
+            opacity: 0.85;
+        }
+
+        .search-box {
+            padding: 35px 40px;
+            background: #f5e6d3;
+            border-bottom: 4px dashed #8b7355;
+            position: relative;
+        }
+
+        .search-box::after {
+            content: '♫ ♪ ♫';
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fefdf8;
+            padding: 4px 25px;
+            color: #8b7355;
+            font-size: 1.2em;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 18px 25px;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.3em;
+            border: 3px solid #8b5a2b;
+            border-radius: 15px 3px 15px 3px;
+            outline: none;
+            transition: all 0.3s ease;
+            background: #fffef9;
+            color: #3d2817;
+            box-shadow: 3px 3px 0 rgba(61, 40, 23, 0.1);
+        }
+
+        #searchInput:focus {
+            border-color: #5d4a36;
+            background: #fff;
+            box-shadow: 5px 5px 0 rgba(93, 74, 54, 0.2);
+        }
+
+        #searchInput::placeholder {
+            color: #a0826d;
+            opacity: 0.7;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .view-button {
+            padding: 12px 24px;
+            border: 3px solid #8b5a2b;
+            background: #fffef9;
+            border-radius: 20px 5px 20px 5px;
+            cursor: pointer;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.1em;
+            color: #3d2817;
+            font-weight: 600;
+            box-shadow: 2px 2px 0 rgba(61, 40, 23, 0.15);
+        }
+
+        .view-button.active {
+            background: #8b7355;
+            color: #fefdf8;
+            border-color: #5d4a36;
+            transform: rotate(-1deg);
+            box-shadow: 4px 4px 0 rgba(61, 40, 23, 0.25);
+        }
+
+        .genre-section {
+            border: 3px solid #3d2817;
+            border-radius: 20px 5px 20px 5px;
+            overflow: hidden;
+            margin-bottom: 35px;
+            background: #fffef9;
+            box-shadow: 4px 4px 0 rgba(61, 40, 23, 0.15);
+        }
+
+        .genre-header {
+            padding: 25px 20px;
+            font-family: 'Caveat', cursive;
+            font-weight: 700;
+            font-size: 2em;
+            color: #fefdf8;
+            text-align: center;
+            background: #8b7355;
+            background-image:
+                repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(254, 253, 248, 0.12) 3px, rgba(254, 253, 248, 0.12) 6px),
+                repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(254, 253, 248, 0.12) 3px, rgba(254, 253, 248, 0.12) 6px);
+            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+            border-bottom: 3px dashed rgba(254, 253, 248, 0.4);
+        }
+
+        .footer {
+            background: #8b7355;
+            background-image:
+                repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(245, 230, 211, 0.1) 3px, rgba(245, 230, 211, 0.1) 6px),
+                repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(245, 230, 211, 0.1) 3px, rgba(245, 230, 211, 0.1) 6px);
+            color: #fefdf8;
+            padding: 70px 40px 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            border-top: 4px dashed #5d4a36;
+            position: relative;
+        }
+
+        .footer::before {
+            content: '♪ ♫ ♪';
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fefdf8;
+            padding: 4px 25px;
+            color: #8b7355;
+            font-size: 1.5em;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .footer h2 {
+            font-family: 'Caveat', cursive;
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            transform: rotate(-1deg);
+            text-shadow: 2px 2px 0 rgba(61, 40, 23, 0.3);
+        }
+
+        .footer h3 {
+            font-family: 'Caveat', cursive;
+            transform: rotate(1deg);
+        }
+
+        .footer p {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.2em;
+            opacity: 0.95;
+            line-height: 1.7;
+        }
+
+        .footer a {
+            color: #fefdf8;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 26px;
+            background: rgba(245, 230, 211, 0.2);
+            border: 2px solid #fefdf8;
+            border-radius: 15px 3px 15px 3px;
+            width: fit-content;
+            font-family: 'Patrick Hand', cursive;
+            font-weight: 600;
+            font-size: 1.1em;
+            box-shadow: 2px 2px 0 rgba(61, 40, 23, 0.2);
+        }
+
+        .footer-poster {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-poster a {
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-poster a:hover {
+            transform: rotate(0deg) scale(1.03);
+        }
+
+        .footer-poster img {
+            max-width: 100%;
+            height: auto;
+            border: 4px solid #fefdf8;
+            border-radius: 5px;
+            box-shadow:
+                0 0 0 8px #8b5a2b,
+                8px 8px 0 8px rgba(61, 40, 23, 0.2);
+            transform: rotate(2deg);
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 2.5em;
+            }
+
+            .venue-header {
+                font-size: 1.6em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a id="playlistLink" href="#" target="_blank" rel="noopener">
+                <h1 id="festivalName">🎵 Loading...</h1>
+                <p id="festivalDate"></p>
+            </a>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for a band...">
+            <div style="margin-top: 15px; display: flex; gap: 10px; align-items: center;">
+                <label style="font-weight: 600;">View:</label>
+                <button id="venueView" class="view-button active">By Venue</button>
+                <button id="genreView" class="view-button">By Genre</button>
+            </div>
+        </div>
+
+        <div id="genreContainer" class="venues hidden"></div>
+
+        <div id="venueContainer" class="venues">
+            <!-- Venues loaded dynamically from data.json -->
+                <a href="https://www.google.com/maps/search/?api=1&query=City+Tire+Keene+NH" target="_blank" class="venue-header-link">
+                    <div class="venue-header city-tire">City Tire</div>
+                </a>
+                <div class="bands">
+                    <a href="https://www.youtube.com/results?search_query=Olde+Myths+In+The+Raw+band" target="_blank" class="band" data-band="Olde Myths In The Raw">
+                        <div class="band-name">Olde Myths In The Raw</div>
+                        <div class="band-time">12:00 - 1:45</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Morning+Weather+band" target="_blank" class="band" data-band="Morning Weather">
+                        <div class="band-name">Morning Weather</div>
+                        <div class="band-time">12:15 - 1:00</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Three+Tea+Emmy+band" target="_blank" class="band" data-band="Three Tea Emmy">
+                        <div class="band-name">Three Tea Emmy</div>
+                        <div class="band-time">2:00 - 2:45</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=A+Bunch+Of+Jerks+band" target="_blank" class="band" data-band="A Bunch Of Jerks">
+                        <div class="band-name">A Bunch Of Jerks</div>
+                        <div class="band-time">2:15 - 3:00</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Dibert+band" target="_blank" class="band" data-band="Dibert">
+                        <div class="band-name">Dibert</div>
+                        <div class="band-time">3:00 - 3:45</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Vibe+Mo+band" target="_blank" class="band" data-band="Vibe Mo">
+                        <div class="band-name">Vibe Mo</div>
+                        <div class="band-time">4:00 - 4:45</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Boogey+And+Overshed+band" target="_blank" class="band" data-band="Boogey And Overshed">
+                        <div class="band-name">Boogey And Overshed</div>
+                        <div class="band-time">5:00 - 5:45</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Dead+By+Sunrise+band" target="_blank" class="band" data-band="Dead By Sunrise">
+                        <div class="band-name">Dead By Sunrise</div>
+                        <div class="band-time">6:00 - 6:45</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Havrok+band" target="_blank" class="band" data-band="Havrok">
+                        <div class="band-name">Havrok</div>
+                        <div class="band-time">7:00 - 7:45</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=The+Ferrett+Forgits+band" target="_blank" class="band" data-band="The Ferrett Forgits">
+                        <div class="band-name">The Ferrett Forgits</div>
+                        <div class="band-time">8:00 - 8:45</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Wandering+of+a+Blackheart+band" target="_blank" class="band" data-band="Wandering of a Blackheart">
+                        <div class="band-name">Wandering of a Blackheart</div>
+                        <div class="band-time">9:00 - 9:45</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="venue" data-venue="gallery-alley">
+                <a href="https://www.google.com/maps/search/?api=1&query=Gallery+Alley+Keene+NH" target="_blank" class="venue-header-link">
+                    <div class="venue-header gallery-alley">Gallery Alley</div>
+                </a>
+                <div class="bands">
+                    <a href="https://www.youtube.com/results?search_query=Jason+Ristiglus+band" target="_blank" class="band" data-band="Jason Ristiglus">
+                        <div class="band-name">Jason Ristiglus</div>
+                        <div class="band-time">12:15 - 1:00</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=JJ+Swatt+Jr+band" target="_blank" class="band" data-band="JJ Swatt Jr">
+                        <div class="band-name">JJ Swatt Jr</div>
+                        <div class="band-time">1:15 - 2:00</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=A+Band+By+A+Damson+band" target="_blank" class="band" data-band="A Band By A Damson">
+                        <div class="band-name">A Band By A Damson</div>
+                        <div class="band-time">2:15 - 3:00</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Reckless+Culture+band" target="_blank" class="band" data-band="Reckless Culture">
+                        <div class="band-name">Reckless Culture</div>
+                        <div class="band-time">2:15 - 3:00</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Ryan+Wells+band" target="_blank" class="band" data-band="Ryan Wells">
+                        <div class="band-name">Ryan Wells</div>
+                        <div class="band-time">3:15 - 4:00</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=It+Be+Lovin+band" target="_blank" class="band" data-band="It Be Lovin">
+                        <div class="band-name">It Be Lovin</div>
+                        <div class="band-time">4:15 - 5:00</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Chrocks+band" target="_blank" class="band" data-band="Chrocks">
+                        <div class="band-name">Chrocks</div>
+                        <div class="band-time">4:15 - 6:00</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Ashley+Saint+brand+band" target="_blank" class="band" data-band="Ashley Saint brand">
+                        <div class="band-name">Ashley Saint brand</div>
+                        <div class="band-time">6:15 - 7:15</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="venue" data-venue="monadnock">
+                <a href="https://www.google.com/maps/search/?api=1&query=Monadnock+Food+Co-op+Keene+NH" target="_blank" class="venue-header-link">
+                    <div class="venue-header monadnock">Monadnock Food Co-op</div>
+                </a>
+                <div class="bands">
+                    <a href="https://www.youtube.com/results?search_query=Kevin+Brown+band" target="_blank" class="band" data-band="Kevin Brown">
+                        <div class="band-name">Kevin Brown</div>
+                        <div class="band-time">10:30 - 11:15</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Jess+Hutchens+band" target="_blank" class="band" data-band="Jess Hutchens">
+                        <div class="band-name">Jess Hutchens</div>
+                        <div class="band-time">11:45 - 12:45</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Seth+Connelly+band" target="_blank" class="band" data-band="Seth Connelly">
+                        <div class="band-name">Seth Connelly</div>
+                        <div class="band-time">1:00 - 2:00</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Magickal+Heynotes+band" target="_blank" class="band" data-band="Magickal Heynotes">
+                        <div class="band-name">Magickal Heynotes</div>
+                        <div class="band-time">2:15 - 3:15</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Maroon+Massacals+band" target="_blank" class="band" data-band="Maroon Massacals">
+                        <div class="band-name">Maroon Massacals</div>
+                        <div class="band-time">3:00 - 4:00</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Eve+Pierce+band" target="_blank" class="band" data-band="Eve Pierce">
+                        <div class="band-name">Eve Pierce</div>
+                        <div class="band-time">4:15 - 5:15</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Riley+Walled+band" target="_blank" class="band" data-band="Riley Walled">
+                        <div class="band-name">Riley Walled</div>
+                        <div class="band-time">5:30 - 6:30</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="venue" data-venue="chesterss">
+                <a href="https://www.google.com/maps/search/?api=1&query=Chester's+Keene+NH" target="_blank" class="venue-header-link">
+                    <div class="venue-header chesterss">Chester's</div>
+                </a>
+                <div class="bands">
+                    <a href="https://www.youtube.com/results?search_query=Emma+Robinson+band" target="_blank" class="band" data-band="Emma Robinson">
+                        <div class="band-name">Emma Robinson</div>
+                        <div class="band-time">11:00 - 12:00</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Crazy+Nixon+band" target="_blank" class="band" data-band="Crazy Nixon">
+                        <div class="band-name">Crazy Nixon</div>
+                        <div class="band-time">12:30 - 1:15</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Ian+Shelby+band" target="_blank" class="band" data-band="Ian Shelby">
+                        <div class="band-name">Ian Shelby</div>
+                        <div class="band-time">1:30 - 2:15</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Lyla+Hutchins+band" target="_blank" class="band" data-band="Lyla Hutchins">
+                        <div class="band-name">Lyla Hutchins</div>
+                        <div class="band-time">2:30 - 3:15</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Natalie+Raccoon+band" target="_blank" class="band" data-band="Natalie Raccoon">
+                        <div class="band-name">Natalie Raccoon</div>
+                        <div class="band-time">3:30 - 4:15</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Angela+Semwell+band" target="_blank" class="band" data-band="Angela Semwell">
+                        <div class="band-name">Angela Semwell</div>
+                        <div class="band-time">4:30 - 5:00</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="venue" data-venue="railroad">
+                <a href="https://www.google.com/maps/search/?api=1&query=Railroad+Square+Keene+NH" target="_blank" class="venue-header-link">
+                    <div class="venue-header railroad">Railroad Sq.</div>
+                </a>
+                <div class="bands">
+                    <a href="https://www.youtube.com/results?search_query=Coochie+Coochie+band" target="_blank" class="band" data-band="Coochie Coochie">
+                        <div class="band-name">Coochie Coochie</div>
+                        <div class="band-time">12:00 - 12:45</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=JD+The+Stevenssons+band" target="_blank" class="band" data-band="JD & The Stevenssons">
+                        <div class="band-name">JD & The Stevenssons</div>
+                        <div class="band-time">12:00 - 12:45</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Congregation+X+band" target="_blank" class="band" data-band="Congregation X">
+                        <div class="band-name">Congregation X</div>
+                        <div class="band-time">1:00 - 1:45</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=HWDBS+band" target="_blank" class="band" data-band="HWDBS">
+                        <div class="band-name">HWDBS</div>
+                        <div class="band-time">2:00 - 2:45</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=The+Upstart+Crows+band" target="_blank" class="band" data-band="The Upstart Crows">
+                        <div class="band-name">The Upstart Crows</div>
+                        <div class="band-time">2:00 - 2:45</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Michael+James+band" target="_blank" class="band" data-band="Michael James">
+                        <div class="band-name">Michael James</div>
+                        <div class="band-time">3:00 - 3:45</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Vote+Evil+band" target="_blank" class="band" data-band="Vote Evil">
+                        <div class="band-name">Vote Evil</div>
+                        <div class="band-time">5:00 - 6:00</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Lowdowndale+band" target="_blank" class="band" data-band="Lowdowndale">
+                        <div class="band-name">Lowdowndale</div>
+                        <div class="band-time">6:00 - 7:15</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Tenderhooks+band" target="_blank" class="band" data-band="Tenderhooks">
+                        <div class="band-name">Tenderhooks</div>
+                        <div class="band-time">7:30 - 8:15</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Dan+Blakeslee+band" target="_blank" class="band" data-band="Dan Blakeslee">
+                        <div class="band-name">Dan Blakeslee</div>
+                        <div class="band-time">8:30 - 9:30</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="venue" data-venue="lamson">
+                <a href="https://www.google.com/maps/search/?api=1&query=Lamson+Street+Keene+NH" target="_blank" class="venue-header-link">
+                    <div class="venue-header lamson">Lamson Street</div>
+                </a>
+                <div class="bands">
+                    <a href="https://www.youtube.com/results?search_query=Ringo+band" target="_blank" class="band" data-band="Ringo">
+                        <div class="band-name">Ringo</div>
+                        <div class="band-time">12:00 - 1:00</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Alshel+Underground+band" target="_blank" class="band" data-band="Alshel Underground">
+                        <div class="band-name">Alshel Underground</div>
+                        <div class="band-time">12:30 - 1:15</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Brock+Jackson+band" target="_blank" class="band" data-band="Brock Jackson">
+                        <div class="band-name">Brock Jackson</div>
+                        <div class="band-time">1:30 - 2:15</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Shmy+New+Toys+band" target="_blank" class="band" data-band="Shmy New Toys">
+                        <div class="band-name">Shmy New Toys</div>
+                        <div class="band-time">2:30 - 3:15</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Dirty+Frizzy+band" target="_blank" class="band" data-band="Dirty Frizzy">
+                        <div class="band-name">Dirty Frizzy</div>
+                        <div class="band-time">3:30 - 4:15</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Lava+Sun+band" target="_blank" class="band" data-band="Lava Sun">
+                        <div class="band-name">Lava Sun</div>
+                        <div class="band-time">4:30 - 5:15</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Halko+band" target="_blank" class="band" data-band="Halko">
+                        <div class="band-name">Halko</div>
+                        <div class="band-time">5:30 - 6:30</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Mint+Grinch+band" target="_blank" class="band" data-band="Mint Grinch">
+                        <div class="band-name">Mint Grinch</div>
+                        <div class="band-time">6:45 - 7:30</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="venue" data-venue="black-clover">
+                <a href="https://www.google.com/maps/search/?api=1&query=Black+Clover+Keene+NH" target="_blank" class="venue-header-link">
+                    <div class="venue-header black-clover">Black Clover</div>
+                </a>
+                <div class="bands">
+                    <a href="https://www.youtube.com/results?search_query=The+Snooze+Allot+band" target="_blank" class="band" data-band="The Snooze Allot">
+                        <div class="band-name">The Snooze Allot</div>
+                        <div class="band-time">12:00 - 12:45</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Rage+To+Slitchez+band" target="_blank" class="band" data-band="Rage To Slitchez">
+                        <div class="band-name">Rage To Slitchez</div>
+                        <div class="band-time">12:45 - 1:15</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=The+Wagon+band" target="_blank" class="band" data-band="The Wagon">
+                        <div class="band-name">The Wagon</div>
+                        <div class="band-time">1:30 - 2:00</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Dizam+band" target="_blank" class="band" data-band="Dizam">
+                        <div class="band-name">Dizam</div>
+                        <div class="band-time">2:45 - 3:45</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Jaime+Earthquake+band" target="_blank" class="band" data-band="Jaime Earthquake">
+                        <div class="band-name">Jaime Earthquake</div>
+                        <div class="band-time">4:00 - 5:00</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Lesh+Reynolds+band" target="_blank" class="band" data-band="Lesh Reynolds">
+                        <div class="band-name">Lesh Reynolds</div>
+                        <div class="band-time">5:15 - 6:15</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Sunogram+band" target="_blank" class="band" data-band="Sunogram">
+                        <div class="band-name">Sunogram</div>
+                        <div class="band-time">Sunogram</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Ba+Da+Ya+Maniam+band" target="_blank" class="band" data-band="Ba Da Ya Maniam">
+                        <div class="band-name">Ba Da Ya Maniam</div>
+                        <div class="band-time">6:15 - 7:00</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Dave+Smisel+band" target="_blank" class="band" data-band="Dave Smisel">
+                        <div class="band-name">Dave Smisel</div>
+                        <div class="band-time">7:15 - 8:15</div>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Cary+Overbilt+Jennifer+Hell+band" target="_blank" class="band" data-band="Cary Overbilt & Jennifer Hell">
+                        <div class="band-name">Cary Overbilt & Jennifer Hell</div>
+                        <div class="band-time">8:30 - 9:30</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <div>
+                    <h2>🎵 Keene Music Festival 2026</h2>
+                    <p>Saturday, September 5, 2026 - Downtown Keene, NH</p>
+                    <p>Discover over 70 incredible bands across 7 unique venues in the heart of downtown Keene.</p>
+                </div>
+                <div>
+                    <h3 style="margin-bottom: 15px; font-size: 1.3em;">Links</h3>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <a href="https://explorekeene.org/" target="_blank" rel="noopener">
+                            🌆 Explore Downtown Keene
+                        </a>
+                        <a href="https://www.monadnocknh.com/" target="_blank" rel="noopener">
+                            🏔️ Monadnock Region
+                        </a>
+                    </div>
+                    <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.7;">
+                        Photo credit: <a href="https://www.monadnocknh.com/2024/04/02/dirt-glass-visit-keene/" target="_blank" rel="noopener" style="padding: 0; background: none; text-decoration: underline;">Dirt & Glass - Visit Keene</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-poster">
+                <a href="keene_music_festival.jpg" target="_blank">
+                    <img src="keene_music_festival.jpg" alt="Keene Music Festival 2026 Official Poster">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const venueView = document.getElementById('venueView');
+        const genreView = document.getElementById('genreView');
+        const venueContainer = document.getElementById('venueContainer');
+        const genreContainer = document.getElementById('genreContainer');
+        const venues = document.querySelectorAll('.venue');
+        const bands = document.querySelectorAll('.band');
+
+        // Genre classifications (simplified mock data)
+        const bandGenres = {
+            'Rock': ['Havrok', 'The Ferrett Forgits', 'Dead By Sunrise', 'Rage To Slitchez', 'Vote Evil'],
+            'Folk': ['Morning Weather', 'Three Tea Emmy', 'Jason Ristiglus', 'Kevin Brown', 'Seth Connelly', 'Dan Blakeslee'],
+            'Indie': ['Vibe Mo', 'A Bunch Of Jerks', 'Dibert', 'Congregation X', 'The Upstart Crows', 'Michael James'],
+            'Electronic': ['Boogey And Overshed', 'Chrocks', 'Lava Sun', 'Dirty Frizzy', 'Halko'],
+            'Jazz': ['JJ Swatt Jr', 'Reckless Culture', 'It Be Lovin', 'Eve Pierce', 'Mint Grinch'],
+            'Acoustic': ['Emma Robinson', 'Crazy Nixon', 'Ian Shelby', 'Lyla Hutchins', 'Natalie Raccoon', 'Angela Semwell', 'Jess Hutchens', 'Maroon Massacals', 'Riley Walled'],
+            'Alternative': ['Wandering of a Blackheart', 'Ashley Saint brand', 'Ryan Wells', 'Coochie Coochie', 'JD & The Stevenssons', 'HWDBS', 'Lowdowndale', 'Tenderhooks', 'Ringo', 'Alshel Underground', 'Brock Jackson', 'Shmy New Toys'],
+            'Experimental': ['Olde Myths In The Raw', 'A Band By A Damson', 'The Snooze Allot', 'The Wagon', 'Dizam', 'Jaime Earthquake', 'Lesh Reynolds', 'Sunogram', 'Ba Da Ya Maniam', 'Dave Smisel', 'Cary Overbilt & Jennifer Hell', 'Magickal Heynotes']
+        };
+
+        function createGenreView() {
+            genreContainer.innerHTML = '';
+            Object.keys(bandGenres).forEach(genre => {
+                const genreSection = document.createElement('div');
+                genreSection.className = 'genre-section';
+                genreSection.setAttribute('data-genre', genre);
+
+                const genreHeader = document.createElement('div');
+                genreHeader.className = 'genre-header';
+                genreHeader.textContent = genre;
+                genreSection.appendChild(genreHeader);
+
+                const bandsDiv = document.createElement('div');
+                bandsDiv.className = 'bands';
+
+                bandGenres[genre].forEach(bandName => {
+                    const bandElement = Array.from(bands).find(b =>
+                        b.getAttribute('data-band') === bandName
+                    );
+                    if (bandElement) {
+                        bandsDiv.appendChild(bandElement.cloneNode(true));
+                    }
+                });
+
+                genreSection.appendChild(bandsDiv);
+                genreContainer.appendChild(genreSection);
+            });
+        }
+
+        createGenreView();
+
+        venueView.addEventListener('click', () => {
+            venueView.classList.add('active');
+            genreView.classList.remove('active');
+            venueContainer.classList.remove('hidden');
+            genreContainer.classList.add('hidden');
+        });
+
+        genreView.addEventListener('click', () => {
+            genreView.classList.add('active');
+            venueView.classList.remove('active');
+            venueContainer.classList.add('hidden');
+            genreContainer.classList.remove('hidden');
+        });
+
+        searchInput.addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase().trim();
+            const isVenueView = !venueContainer.classList.contains('hidden');
+
+            if (searchTerm === '') {
+                if (isVenueView) {
+                    venues.forEach(venue => venue.classList.remove('hidden'));
+                    bands.forEach(band => band.classList.remove('hidden'));
+                } else {
+                    document.querySelectorAll('.genre-section').forEach(section =>
+                        section.classList.remove('hidden')
+                    );
+                    document.querySelectorAll('#genreContainer .band').forEach(band =>
+                        band.classList.remove('hidden')
+                    );
+                }
+                return;
+            }
+
+            if (isVenueView) {
+                bands.forEach(band => {
+                    const bandName = band.getAttribute('data-band').toLowerCase();
+                    if (bandName.includes(searchTerm)) {
+                        band.classList.remove('hidden');
+                    } else {
+                        band.classList.add('hidden');
+                    }
+                });
+
+                venues.forEach(venue => {
+                    const visibleBands = venue.querySelectorAll('.band:not(.hidden)');
+                    if (visibleBands.length === 0) {
+                        venue.classList.add('hidden');
+                    } else {
+                        venue.classList.remove('hidden');
+                    }
+                });
+            } else {
+                document.querySelectorAll('#genreContainer .band').forEach(band => {
+                    const bandName = band.getAttribute('data-band').toLowerCase();
+                    if (bandName.includes(searchTerm)) {
+                        band.classList.remove('hidden');
+                    } else {
+                        band.classList.add('hidden');
+                    }
+                });
+
+                document.querySelectorAll('.genre-section').forEach(section => {
+                    const visibleBands = section.querySelectorAll('.band:not(.hidden)');
+                    if (visibleBands.length === 0) {
+                        section.classList.add('hidden');
+                    } else {
+                        section.classList.remove('hidden');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

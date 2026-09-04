@@ -1,0 +1,508 @@
+{
+  "festival": {
+    "name": "Keene Music Festival 2026",
+    "date": "2026-09-05",
+    "dateDisplay": "Saturday, September 5, 2026",
+    "location": "Downtown Keene, NH",
+    "posterImage": "keene_music_festival.jpg"
+  },
+  "venues": [
+    {
+      "id": "city-tire",
+      "name": "City Tire",
+      "color": "#e67e22",
+      "mapsQuery": "City+Tire+Keene+NH",
+      "pattern": "dots",
+      "bands": [
+        {
+          "name": "Olde Myths In The Raw",
+          "startTime": "12:00",
+          "endTime": "13:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Olde+Myths+In+The+Raw+band",
+          "genre": "Experimental"
+        },
+        {
+          "name": "Morning Weather",
+          "startTime": "12:15",
+          "endTime": "13:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Morning+Weather+band",
+          "genre": "Folk"
+        },
+        {
+          "name": "Three Tea Emmy",
+          "startTime": "14:00",
+          "endTime": "14:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Three+Tea+Emmy+band",
+          "genre": "Folk"
+        },
+        {
+          "name": "A Bunch Of Jerks",
+          "startTime": "14:15",
+          "endTime": "15:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=A+Bunch+Of+Jerks+band",
+          "genre": "Indie"
+        },
+        {
+          "name": "Dibert",
+          "startTime": "15:00",
+          "endTime": "15:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Dibert+band",
+          "genre": "Indie"
+        },
+        {
+          "name": "Vibe Mo",
+          "startTime": "16:00",
+          "endTime": "16:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Vibe+Mo+band",
+          "genre": "Indie"
+        },
+        {
+          "name": "Boogey And Overshed",
+          "startTime": "17:00",
+          "endTime": "17:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Boogey+And+Overshed+band",
+          "genre": "Electronic"
+        },
+        {
+          "name": "Dead By Sunrise",
+          "startTime": "18:00",
+          "endTime": "18:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Dead+By+Sunrise+band",
+          "genre": "Rock"
+        },
+        {
+          "name": "Havrok",
+          "startTime": "19:00",
+          "endTime": "19:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Havrok+band",
+          "genre": "Rock"
+        },
+        {
+          "name": "The Ferrett Forgits",
+          "startTime": "20:00",
+          "endTime": "20:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=The+Ferrett+Forgits+band",
+          "genre": "Rock"
+        },
+        {
+          "name": "Wandering of a Blackheart",
+          "startTime": "21:00",
+          "endTime": "21:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Wandering+of+a+Blackheart+band",
+          "genre": "Alternative"
+        }
+      ]
+    },
+    {
+      "id": "gallery-alley",
+      "name": "Gallery Alley",
+      "color": "#a0522d",
+      "mapsQuery": "Gallery+Alley+Keene+NH",
+      "pattern": "vertical-lines",
+      "bands": [
+        {
+          "name": "Jason Ristiglus",
+          "startTime": "12:15",
+          "endTime": "13:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Jason+Ristiglus+band",
+          "genre": "Folk"
+        },
+        {
+          "name": "JJ Swatt Jr",
+          "startTime": "13:15",
+          "endTime": "14:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=JJ+Swatt+Jr+band",
+          "genre": "Jazz"
+        },
+        {
+          "name": "A Band By A Damson",
+          "startTime": "14:15",
+          "endTime": "15:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=A+Band+By+A+Damson+band",
+          "genre": "Experimental"
+        },
+        {
+          "name": "Reckless Culture",
+          "startTime": "14:15",
+          "endTime": "15:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Reckless+Culture+band",
+          "genre": "Jazz"
+        },
+        {
+          "name": "Ryan Wells",
+          "startTime": "15:15",
+          "endTime": "16:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Ryan+Wells+band",
+          "genre": "Alternative"
+        },
+        {
+          "name": "It Be Lovin",
+          "startTime": "16:15",
+          "endTime": "17:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=It+Be+Lovin+band",
+          "genre": "Jazz"
+        },
+        {
+          "name": "Chrocks",
+          "startTime": "16:15",
+          "endTime": "18:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Chrocks+band",
+          "genre": "Electronic"
+        },
+        {
+          "name": "Ashley Saint brand",
+          "startTime": "18:15",
+          "endTime": "19:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Ashley+Saint+brand+band",
+          "genre": "Alternative"
+        }
+      ]
+    },
+    {
+      "id": "monadnock",
+      "name": "Monadnock Food Co-op",
+      "color": "#d4a574",
+      "mapsQuery": "Monadnock+Food+Co-op+Keene+NH",
+      "pattern": "crosshatch",
+      "bands": [
+        {
+          "name": "Kevin Brown",
+          "startTime": "10:30",
+          "endTime": "11:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Kevin+Brown+band",
+          "genre": "Folk"
+        },
+        {
+          "name": "Jess Hutchens",
+          "startTime": "11:45",
+          "endTime": "12:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Jess+Hutchens+band",
+          "genre": "Acoustic"
+        },
+        {
+          "name": "Seth Connelly",
+          "startTime": "13:00",
+          "endTime": "14:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Seth+Connelly+band",
+          "genre": "Folk"
+        },
+        {
+          "name": "Magickal Heynotes",
+          "startTime": "14:15",
+          "endTime": "15:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Magickal+Heynotes+band",
+          "genre": "Experimental"
+        },
+        {
+          "name": "Maroon Massacals",
+          "startTime": "15:00",
+          "endTime": "16:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Maroon+Massacals+band",
+          "genre": "Acoustic"
+        },
+        {
+          "name": "Eve Pierce",
+          "startTime": "16:15",
+          "endTime": "17:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Eve+Pierce+band",
+          "genre": "Jazz"
+        },
+        {
+          "name": "Riley Walled",
+          "startTime": "17:30",
+          "endTime": "18:30",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Riley+Walled+band",
+          "genre": "Acoustic"
+        }
+      ]
+    },
+    {
+      "id": "chesterss",
+      "name": "Chester's",
+      "color": "#8b4513",
+      "mapsQuery": "Chester's+Keene+NH",
+      "pattern": "dot-matrix",
+      "bands": [
+        {
+          "name": "Emma Robinson",
+          "startTime": "11:00",
+          "endTime": "12:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Emma+Robinson+band",
+          "genre": "Acoustic"
+        },
+        {
+          "name": "Crazy Nixon",
+          "startTime": "12:30",
+          "endTime": "13:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Crazy+Nixon+band",
+          "genre": "Acoustic"
+        },
+        {
+          "name": "Ian Shelby",
+          "startTime": "13:30",
+          "endTime": "14:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Ian+Shelby+band",
+          "genre": "Acoustic"
+        },
+        {
+          "name": "Lyla Hutchins",
+          "startTime": "14:30",
+          "endTime": "15:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Lyla+Hutchins+band",
+          "genre": "Acoustic"
+        },
+        {
+          "name": "Natalie Raccoon",
+          "startTime": "15:30",
+          "endTime": "16:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Natalie+Raccoon+band",
+          "genre": "Acoustic"
+        },
+        {
+          "name": "Angela Semwell",
+          "startTime": "16:30",
+          "endTime": "17:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Angela+Semwell+band",
+          "genre": "Acoustic"
+        }
+      ]
+    },
+    {
+      "id": "railroad",
+      "name": "Railroad Sq.",
+      "color": "#6b8e23",
+      "mapsQuery": "Railroad+Square+Keene+NH",
+      "pattern": "grid",
+      "bands": [
+        {
+          "name": "Coochie Coochie",
+          "startTime": "12:00",
+          "endTime": "12:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Coochie+Coochie+band",
+          "genre": "Alternative"
+        },
+        {
+          "name": "JD & The Stevenssons",
+          "startTime": "12:00",
+          "endTime": "12:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=JD+The+Stevenssons+band",
+          "genre": "Alternative"
+        },
+        {
+          "name": "Congregation X",
+          "startTime": "13:00",
+          "endTime": "13:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Congregation+X+band",
+          "genre": "Indie"
+        },
+        {
+          "name": "HWDBS",
+          "startTime": "14:00",
+          "endTime": "14:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=HWDBS+band",
+          "genre": "Alternative"
+        },
+        {
+          "name": "The Upstart Crows",
+          "startTime": "14:00",
+          "endTime": "14:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=The+Upstart+Crows+band",
+          "genre": "Indie"
+        },
+        {
+          "name": "Michael James",
+          "startTime": "15:00",
+          "endTime": "15:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Michael+James+band",
+          "genre": "Indie"
+        },
+        {
+          "name": "Vote Evil",
+          "startTime": "17:00",
+          "endTime": "18:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Vote+Evil+band",
+          "genre": "Rock"
+        },
+        {
+          "name": "Lowdowndale",
+          "startTime": "18:00",
+          "endTime": "19:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Lowdowndale+band",
+          "genre": "Alternative"
+        },
+        {
+          "name": "Tenderhooks",
+          "startTime": "19:30",
+          "endTime": "20:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Tenderhooks+band",
+          "genre": "Alternative"
+        },
+        {
+          "name": "Dan Blakeslee",
+          "startTime": "20:30",
+          "endTime": "21:30",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Dan+Blakeslee+band",
+          "genre": "Folk"
+        }
+      ]
+    },
+    {
+      "id": "lamson",
+      "name": "Lamson Street",
+      "color": "#cd853f",
+      "mapsQuery": "Lamson+Street+Keene+NH",
+      "pattern": "diagonal-crosshatch",
+      "bands": [
+        {
+          "name": "Ringo",
+          "startTime": "12:00",
+          "endTime": "13:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Ringo+band",
+          "genre": "Alternative"
+        },
+        {
+          "name": "Alshel Underground",
+          "startTime": "12:30",
+          "endTime": "13:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Alshel+Underground+band",
+          "genre": "Alternative"
+        },
+        {
+          "name": "Brock Jackson",
+          "startTime": "13:30",
+          "endTime": "14:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Brock+Jackson+band",
+          "genre": "Alternative"
+        },
+        {
+          "name": "Shmy New Toys",
+          "startTime": "14:30",
+          "endTime": "15:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Shmy+New+Toys+band",
+          "genre": "Alternative"
+        },
+        {
+          "name": "Dirty Frizzy",
+          "startTime": "15:30",
+          "endTime": "16:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Dirty+Frizzy+band",
+          "genre": "Electronic"
+        },
+        {
+          "name": "Lava Sun",
+          "startTime": "16:30",
+          "endTime": "17:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Lava+Sun+band",
+          "genre": "Electronic"
+        },
+        {
+          "name": "Halko",
+          "startTime": "17:30",
+          "endTime": "18:30",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Halko+band",
+          "genre": "Electronic"
+        },
+        {
+          "name": "Mint Grinch",
+          "startTime": "18:45",
+          "endTime": "19:30",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Mint+Grinch+band",
+          "genre": "Jazz"
+        }
+      ]
+    },
+    {
+      "id": "black-clover",
+      "name": "Black Clover",
+      "color": "#556b2f",
+      "mapsQuery": "Black+Clover+Keene+NH",
+      "pattern": "multi-angle",
+      "bands": [
+        {
+          "name": "The Snooze Allot",
+          "startTime": "12:00",
+          "endTime": "12:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=The+Snooze+Allot+band",
+          "genre": "Experimental"
+        },
+        {
+          "name": "Rage To Slitchez",
+          "startTime": "12:45",
+          "endTime": "13:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Rage+To+Slitchez+band",
+          "genre": "Rock"
+        },
+        {
+          "name": "The Wagon",
+          "startTime": "13:30",
+          "endTime": "14:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=The+Wagon+band",
+          "genre": "Experimental"
+        },
+        {
+          "name": "Dizam",
+          "startTime": "14:45",
+          "endTime": "15:45",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Dizam+band",
+          "genre": "Experimental"
+        },
+        {
+          "name": "Jaime Earthquake",
+          "startTime": "16:00",
+          "endTime": "17:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Jaime+Earthquake+band",
+          "genre": "Experimental"
+        },
+        {
+          "name": "Lesh Reynolds",
+          "startTime": "17:15",
+          "endTime": "18:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Lesh+Reynolds+band",
+          "genre": "Experimental"
+        },
+        {
+          "name": "Sunogram",
+          "startTime": "18:15",
+          "endTime": "19:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Sunogram+band",
+          "genre": "Experimental"
+        },
+        {
+          "name": "Ba Da Ya Maniam",
+          "startTime": "18:15",
+          "endTime": "19:00",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Ba+Da+Ya+Maniam+band",
+          "genre": "Experimental"
+        },
+        {
+          "name": "Dave Smisel",
+          "startTime": "19:15",
+          "endTime": "20:15",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Dave+Smisel+band",
+          "genre": "Experimental"
+        },
+        {
+          "name": "Cary Overbilt & Jennifer Hell",
+          "startTime": "20:30",
+          "endTime": "21:30",
+          "youtubeLink": "https://www.youtube.com/results?search_query=Cary+Overbilt+Jennifer+Hell+band",
+          "genre": "Experimental"
+        }
+      ]
+    }
+  ],
+  "genres": {
+    "Rock": ["Havrok", "The Ferrett Forgits", "Dead By Sunrise", "Rage To Slitchez", "Vote Evil"],
+    "Folk": ["Morning Weather", "Three Tea Emmy", "Jason Ristiglus", "Kevin Brown", "Seth Connelly", "Dan Blakeslee"],
+    "Indie": ["Vibe Mo", "A Bunch Of Jerks", "Dibert", "Congregation X", "The Upstart Crows", "Michael James"],
+    "Electronic": ["Boogey And Overshed", "Chrocks", "Lava Sun", "Dirty Frizzy", "Halko"],
+    "Jazz": ["JJ Swatt Jr", "Reckless Culture", "It Be Lovin", "Eve Pierce", "Mint Grinch"],
+    "Acoustic": ["Emma Robinson", "Crazy Nixon", "Ian Shelby", "Lyla Hutchins", "Natalie Raccoon", "Angela Semwell", "Jess Hutchens", "Maroon Massacals", "Riley Walled"],
+    "Alternative": ["Wandering of a Blackheart", "Ashley Saint brand", "Ryan Wells", "Coochie Coochie", "JD & The Stevenssons", "HWDBS", "Lowdowndale", "Tenderhooks", "Ringo", "Alshel Underground", "Brock Jackson", "Shmy New Toys"],
+    "Experimental": ["Olde Myths In The Raw", "A Band By A Damson", "The Snooze Allot", "The Wagon", "Dizam", "Jaime Earthquake", "Lesh Reynolds", "Sunogram", "Ba Da Ya Maniam", "Dave Smisel", "Cary Overbilt & Jennifer Hell", "Magickal Heynotes"]
+  },
+  "links": {
+    "exploreKeene": "https://explorekeene.org/",
+    "monadnockRegion": "https://www.monadnocknh.com/"
+  }
+}
