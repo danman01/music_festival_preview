@@ -2,507 +2,1831 @@
   "festival": {
     "name": "Keene Music Festival 2026",
     "date": "2026-09-05",
-    "dateDisplay": "Saturday, September 5, 2026",
     "location": "Downtown Keene, NH",
-    "posterImage": "keene_music_festival.jpg"
+    "admission": "free",
+    "source_note": "Times and lineup transcribed from the supplied 2026 festival poster; lineup also cross-checked against recent local festival coverage.",
+    "sources": [
+      "https://www.newsradiokeene.com/news/local/keene-music-festival-sets-return-for-sept-5-across-downtown/",
+      "https://mykeenenow.com/news/219912-keene-music-festival-returns-sept-5-with-seven-stages-dozens-of-local-acts/"
+    ]
   },
   "venues": [
     {
-      "id": "city-tire",
-      "name": "City Tire",
-      "color": "#e67e22",
-      "mapsQuery": "City+Tire+Keene+NH",
-      "pattern": "dots",
-      "bands": [
+      "city_tire": {
+        "bands": [
+          {
+            "name": "Cole Phillips & The Early Morning Weather",
+            "time": "12:00-12:45",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Cole+Phillips+%26+The+Early+Morning+Weather+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Cole+Phillips+%26+The+Early+Morning+Weather+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Cole+Phillips+%26+The+Early+Morning+Weather+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Times The Enemy",
+            "time": "1:00-1:45",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Times+The+Enemy+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Times+The+Enemy+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Times+The+Enemy+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Side Effects May Include",
+            "time": "2:00-2:45",
+            "links": [
+              {
+                "type": "bandcamp",
+                "url": "https://sideeffectsmayinclude2016.bandcamp.com/album/the-awakening"
+              },
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Side+Effects+May+Include+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Side+Effects+May+Include+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Side+Effects+May+Include+music"
+              }
+            ],
+            "description": "New England death-metal band with deathcore and technical-metal elements.",
+            "genre": [
+              "death metal",
+              "deathcore",
+              "technical metal"
+            ],
+            "research": {
+              "verified_direct_links": true,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Chiburi",
+            "time": "3:00-3:45",
+            "links": [
+              {
+                "type": "bandcamp",
+                "url": "https://chiburi.bandcamp.com/album/orson-welles"
+              },
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Chiburi+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Chiburi+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Chiburi+music"
+              }
+            ],
+            "description": "New Hampshire three-piece with an established Bandcamp catalog.",
+            "genre": [
+              "alternative rock",
+              "indie rock"
+            ],
+            "research": {
+              "verified_direct_links": true,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Vices Inc.",
+            "time": "4:00-4:45",
+            "links": [
+              {
+                "type": "official",
+                "url": "https://www.vicesinc.com/"
+              },
+              {
+                "type": "spotify",
+                "url": "https://open.spotify.com/artist/1SURdzPcn0fO2kYnZ7jAAz"
+              },
+              {
+                "type": "apple_music",
+                "url": "https://music.apple.com/us/artist/vices-inc/1502536241"
+              },
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Vices+Inc.+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Vices+Inc.+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Vices+Inc.+music"
+              }
+            ],
+            "description": "Female-fronted New England band mixing alternative, pop-punk and dance rock.",
+            "genre": [
+              "alternative rock",
+              "pop punk",
+              "dance rock"
+            ],
+            "research": {
+              "verified_direct_links": true,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "6 Minds Combined",
+            "time": "5:00-5:45",
+            "links": [
+              {
+                "type": "bandcamp",
+                "url": "https://6mindscombinedofficial.bandcamp.com/"
+              },
+              {
+                "type": "apple_music",
+                "url": "https://music.apple.com/us/album/intense-single/1816378999"
+              },
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=6+Minds+Combined+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/6+Minds+Combined+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=6+Minds+Combined+music"
+              }
+            ],
+            "description": "Nashua alternative hip-hop project blending rap, rock, techno and dark electronic textures.",
+            "genre": [
+              "alternative hip-hop",
+              "rap",
+              "electronic",
+              "rock"
+            ],
+            "research": {
+              "verified_direct_links": true,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Dead By Dawn",
+            "time": "6:00-6:45",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Dead+By+Dawn+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Dead+By+Dawn+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Dead+By+Dawn+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Hemlok",
+            "time": "7:00-7:45",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Hemlok+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Hemlok+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Hemlok+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "The Forest Forgets",
+            "time": "8:00-8:45",
+            "links": [
+              {
+                "type": "bandcamp",
+                "url": "https://theforestforgets.bandcamp.com/album/of-wind-willows"
+              },
+              {
+                "type": "spotify",
+                "url": "https://open.spotify.com/artist/5BgyP5heS5ZSWcCUam4J4k"
+              },
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=The+Forest+Forgets+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/The+Forest+Forgets+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=The+Forest+Forgets+music"
+              }
+            ],
+            "description": "Manchester, NH post-metal combining sludgy riffs, doom weight, atmospheric post-rock and introspective lyrics.",
+            "genre": [
+              "post-metal",
+              "doom metal",
+              "stoner metal",
+              "post-rock"
+            ],
+            "research": {
+              "verified_direct_links": true,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Humdinger & The Bucksnort",
+            "time": "9:00-9:45",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Humdinger+%26+The+Bucksnort+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Humdinger+%26+The+Bucksnort+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Humdinger+%26+The+Bucksnort+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "gallery_alley": {
+        "bands": [
+          {
+            "name": "Esther Rhatigan",
+            "time": "11:30-12:00",
+            "links": [
+              {
+                "type": "official_song",
+                "url": "https://estherrhatigan.com/longtimesun.html"
+              },
+              {
+                "type": "apple_music",
+                "url": "https://music.apple.com/us/artist/esther-rhatigan/1442964016"
+              },
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Esther+Rhatigan+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Esther+Rhatigan+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Esther+Rhatigan+music"
+              }
+            ],
+            "description": "Vocalist, songwriter, composer and producer whose releases emphasize hope, love and expressive storytelling.",
+            "genre": [
+              "singer-songwriter",
+              "folk",
+              "pop"
+            ],
+            "research": {
+              "verified_direct_links": true,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "B. Snair & Vincent Tessoro",
+            "time": "12:15-1:00",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=B.+Snair+%26+Vincent+Tessoro+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/B.+Snair+%26+Vincent+Tessoro+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=B.+Snair+%26+Vincent+Tessoro+music"
+              }
+            ],
+            "description": "Collaborative alternative hip-hop/rock performance.",
+            "genre": "alternative hip-hop / rock",
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Horsefly Gulch",
+            "time": "1:15-2:00",
+            "links": [
+              {
+                "type": "official",
+                "url": "https://horseflygulch.com/"
+              },
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Horsefly+Gulch+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Horsefly+Gulch+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Horsefly+Gulch+music"
+              }
+            ],
+            "description": "New Hampshire trio mixing 1970s retro-rock with modern folk and a twangy roots-rock feel.",
+            "genre": [
+              "retro rock",
+              "folk",
+              "roots rock"
+            ],
+            "research": {
+              "verified_direct_links": true,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Pointless Culture",
+            "time": "2:15-3:00",
+            "links": [
+              {
+                "type": "bandcamp",
+                "url": "https://pointlessculture.bandcamp.com/"
+              },
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Pointless+Culture+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Pointless+Culture+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Pointless+Culture+music"
+              }
+            ],
+            "description": "New England rock band blending indie, punk, alternative, folk, power pop and post-punk.",
+            "genre": [
+              "indie rock",
+              "alternative rock",
+              "punk",
+              "power pop"
+            ],
+            "research": {
+              "verified_direct_links": true,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Mimi Fang",
+            "time": "3:15-4:00",
+            "links": [
+              {
+                "type": "bandcamp",
+                "url": "https://mimifang.bandcamp.com/"
+              },
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Mimi+Fang+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Mimi+Fang+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Mimi+Fang+music"
+              }
+            ],
+            "description": "Vermont-based angsty power-pop singer-songwriter.",
+            "genre": [
+              "power pop",
+              "indie",
+              "singer-songwriter"
+            ],
+            "research": {
+              "verified_direct_links": true,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Faux In Love",
+            "time": "4:15-5:00",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Faux+In+Love+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Faux+In+Love+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Faux+In+Love+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Chodus",
+            "time": "5:15-6:00",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Chodus+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Chodus+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Chodus+music"
+              }
+            ],
+            "description": "Claremont, NH three-piece alternative rock band with chunky riffs and melodic hooks.",
+            "genre": [
+              "alternative rock",
+              "indie rock"
+            ],
+            "research": {
+              "verified_direct_links": true,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Wired For Sound",
+            "time": "6:15-7:15",
+            "links": [
+              {
+                "type": "bandcamp",
+                "url": "https://wiredforsoundnh.bandcamp.com/"
+              },
+              {
+                "type": "reverbnation",
+                "url": "https://www.reverbnation.com/wiredforsoundnh"
+              },
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Wired+For+Sound+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Wired+For+Sound+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Wired+For+Sound+music"
+              }
+            ],
+            "description": "New Hampshire three-piece female-fronted grungy punk-rock band.",
+            "genre": [
+              "grunge",
+              "punk rock",
+              "alternative rock"
+            ],
+            "research": {
+              "verified_direct_links": true,
+              "search_fallbacks_included": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "monadnock_food_coop": {
+        "bands": [
+          {
+            "name": "Matt Litzinger",
+            "time": "10:30-11:30",
+            "links": [
+              {
+                "type": "bandcamp",
+                "url": "https://mattlitzinger.bandcamp.com/"
+              },
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Matt+Litzinger+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Matt+Litzinger+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Matt+Litzinger+music"
+              }
+            ],
+            "description": "New Hampshire singer-songwriter focused on vulnerable, hopeful storytelling.",
+            "genre": [
+              "singer-songwriter",
+              "folk",
+              "acoustic"
+            ],
+            "research": {
+              "verified_direct_links": true,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Jess Hutchins",
+            "time": "11:45-12:45",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Jess+Hutchins+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Jess+Hutchins+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Jess+Hutchins+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Trinity Nay",
+            "time": "1:00-2:00",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Trinity+Nay+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Trinity+Nay+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Trinity+Nay+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Tod Born",
+            "time": "2:15-2:45",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Tod+Born+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Tod+Born+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Tod+Born+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Marcus' Meercats",
+            "time": "3:00-4:00",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Marcus%27+Meercats+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Marcus%27+Meercats+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Marcus%27+Meercats+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Eve Pierce",
+            "time": "4:15-5:15",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Eve+Pierce+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Eve+Pierce+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Eve+Pierce+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Riley Walter",
+            "time": "5:30-6:30",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Riley+Walter+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Riley+Walter+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Riley+Walter+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "chapters": {
+        "bands": [
+          {
+            "name": "Joel Eaton",
+            "time": "11:30-12:15",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Joel+Eaton+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Joel+Eaton+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Joel+Eaton+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Lady Heron",
+            "time": "12:30-1:15",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Lady+Heron+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Lady+Heron+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Lady+Heron+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "The Timothy",
+            "time": "1:30-2:15",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=The+Timothy+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/The+Timothy+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=The+Timothy+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Gager Uno",
+            "time": "2:30-3:15",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Gager+Uno+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Gager+Uno+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Gager+Uno+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Lyle Hutchins",
+            "time": "3:30-4:15",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Lyle+Hutchins+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Lyle+Hutchins+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Lyle+Hutchins+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "James Baucom",
+            "time": "4:30-5:00",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=James+Baucom+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/James+Baucom+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=James+Baucom+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Angela Stewart",
+            "time": "5:30-6:00",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Angela+Stewart+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Angela+Stewart+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Angela+Stewart+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "railroad_square": {
+        "bands": [
+          {
+            "name": "Ian Galipeau",
+            "time": "11:00-11:45",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Ian+Galipeau+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Ian+Galipeau+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Ian+Galipeau+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "JD & The Stonemasons",
+            "time": "12:00-12:45",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=JD+%26+The+Stonemasons+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/JD+%26+The+Stonemasons+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=JD+%26+The+Stonemasons+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Congregation X",
+            "time": "1:00-1:45",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Congregation+X+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Congregation+X+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Congregation+X+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "PARRIS",
+            "time": "2:00-2:45",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=PARRIS+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/PARRIS+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=PARRIS+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "The Upstart Crows",
+            "time": "3:00-3:45",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=The+Upstart+Crows+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/The+Upstart+Crows+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=The+Upstart+Crows+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Gwell-O",
+            "time": "4:00-4:45",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Gwell-O+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Gwell-O+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Gwell-O+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Vale End",
+            "time": "5:00-6:00",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Vale+End+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Vale+End+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Vale+End+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Lobotomobile",
+            "time": "6:15-7:15",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Lobotomobile+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Lobotomobile+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Lobotomobile+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Tumbletoads",
+            "time": "7:30-8:30",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Tumbletoads+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Tumbletoads+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Tumbletoads+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Hug The Dog",
+            "time": "8:45-9:45",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Hug+The+Dog+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Hug+The+Dog+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Hug+The+Dog+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "lamson_street": {
+        "bands": [
+          {
+            "name": "Salt The Pot",
+            "time": "11:30-12:15",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Salt+The+Pot+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Salt+The+Pot+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Salt+The+Pot+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Astral Underground",
+            "time": "12:30-1:15",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Astral+Underground+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Astral+Underground+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Astral+Underground+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Bosey Joe",
+            "time": "1:30-2:15",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Bosey+Joe+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Bosey+Joe+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Bosey+Joe+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Shiny New Toyz",
+            "time": "2:30-3:15",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Shiny+New+Toyz+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Shiny+New+Toyz+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Shiny+New+Toyz+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Coffin Flop",
+            "time": "3:30-4:15",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Coffin+Flop+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Coffin+Flop+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Coffin+Flop+music"
+              }
+            ],
+            "description": "Keene, NH doomy punk band.",
+            "genre": [
+              "doom punk",
+              "punk",
+              "doom rock"
+            ],
+            "research": {
+              "verified_direct_links": true,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Hobo Wizard",
+            "time": "4:30-5:15",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Hobo+Wizard+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Hobo+Wizard+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Hobo+Wizard+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Helixx",
+            "time": "5:30-6:30",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Helixx+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Helixx+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Helixx+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Psidemica",
+            "time": "6:45-7:45",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Psidemica+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Psidemica+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Psidemica+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "black_cloud": {
+        "bands": [
+          {
+            "name": "Garrett Gleason",
+            "time": "11:45-12:30",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Garrett+Gleason+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Garrett+Gleason+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Garrett+Gleason+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Ragz To Stitchez",
+            "time": "12:45-1:15",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Ragz+To+Stitchez+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Ragz+To+Stitchez+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Ragz+To+Stitchez+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "The Negans",
+            "time": "1:30-2:30",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=The+Negans+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/The+Negans+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=The+Negans+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Oziem",
+            "time": "2:45-3:45",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Oziem+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Oziem+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Oziem+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Jonee Earthquake",
+            "time": "4:00-5:00",
+            "links": [
+              {
+                "type": "bandcamp",
+                "url": "https://joneeearthquakeband.bandcamp.com/"
+              },
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Jonee+Earthquake+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Jonee+Earthquake+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Jonee+Earthquake+music"
+              }
+            ],
+            "description": "Long-running Northern New England high-energy punk/rockabilly/garage act.",
+            "genre": [
+              "punk",
+              "rockabilly",
+              "garage rock",
+              "country punk"
+            ],
+            "research": {
+              "verified_direct_links": true,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "The Champlain Shoregasm",
+            "time": "5:15-6:00",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=The+Champlain+Shoregasm+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/The+Champlain+Shoregasm+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=The+Champlain+Shoregasm+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Etch & The Youngs",
+            "time": "6:15-7:00",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Etch+%26+The+Youngs+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Etch+%26+The+Youngs+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Etch+%26+The+Youngs+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Sunset Electric",
+            "time": "7:15-8:15",
+            "links": [
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Sunset+Electric+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Sunset+Electric+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Sunset+Electric+music"
+              }
+            ],
+            "description": "Festival act; detailed artist bio not reliably verified in this research pass.",
+            "genre": [
+              "unverified"
+            ],
+            "research": {
+              "verified_direct_links": false,
+              "search_fallbacks_included": true
+            }
+          },
+          {
+            "name": "Jennifer Tefft & The Strange",
+            "time": "8:30-9:30",
+            "links": [
+              {
+                "type": "spotify",
+                "url": "https://open.spotify.com/album/0dEh8j3oDbVXSitbCUwsAN"
+              },
+              {
+                "type": "youtube_search",
+                "url": "https://www.youtube.com/results?search_query=Jennifer+Tefft+%26+The+Strange+music"
+              },
+              {
+                "type": "spotify_search",
+                "url": "https://open.spotify.com/search/Jennifer+Tefft+%26+The+Strange+music"
+              },
+              {
+                "type": "bandcamp_search",
+                "url": "https://bandcamp.com/search?q=Jennifer+Tefft+%26+The+Strange+music"
+              }
+            ],
+            "description": "Gritty, lush alternative rock with a strong singer-songwriter core.",
+            "genre": [
+              "alternative rock"
+            ],
+            "research": {
+              "verified_direct_links": true,
+              "search_fallbacks_included": true
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "itineraries": [
+    {
+      "id": "rock-metal-marathon",
+      "name": "Rock & Metal Marathon",
+      "description": "Hit the best heavy acts at City Tire - the rock/metal stage with variety from punk to doom metal",
+      "emoji": "🤘",
+      "schedule": [
         {
-          "name": "Olde Myths In The Raw",
-          "startTime": "12:00",
-          "endTime": "13:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Olde+Myths+In+The+Raw+band",
-          "genre": "Experimental"
+          "time": "2:00",
+          "band": "Side Effects May Include",
+          "venue": "City Tire",
+          "note": "Heavy death/groove metal to kick things off"
         },
         {
-          "name": "Morning Weather",
-          "startTime": "12:15",
-          "endTime": "13:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Morning+Weather+band",
-          "genre": "Folk"
+          "time": "4:00",
+          "band": "Vices Inc.",
+          "venue": "City Tire",
+          "note": "Energetic alternative/pop-punk energy"
         },
         {
-          "name": "Three Tea Emmy",
-          "startTime": "14:00",
-          "endTime": "14:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Three+Tea+Emmy+band",
-          "genre": "Folk"
+          "time": "6:00",
+          "band": "Dead By Dawn",
+          "venue": "City Tire",
+          "note": "Keep the intensity going"
         },
         {
-          "name": "A Bunch Of Jerks",
-          "startTime": "14:15",
-          "endTime": "15:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=A+Bunch+Of+Jerks+band",
-          "genre": "Indie"
+          "time": "7:00",
+          "band": "Hemlok",
+          "venue": "City Tire",
+          "note": "Heavy evening set"
         },
         {
-          "name": "Dibert",
-          "startTime": "15:00",
-          "endTime": "15:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Dibert+band",
-          "genre": "Indie"
-        },
-        {
-          "name": "Vibe Mo",
-          "startTime": "16:00",
-          "endTime": "16:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Vibe+Mo+band",
-          "genre": "Indie"
-        },
-        {
-          "name": "Boogey And Overshed",
-          "startTime": "17:00",
-          "endTime": "17:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Boogey+And+Overshed+band",
-          "genre": "Electronic"
-        },
-        {
-          "name": "Dead By Sunrise",
-          "startTime": "18:00",
-          "endTime": "18:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Dead+By+Sunrise+band",
-          "genre": "Rock"
-        },
-        {
-          "name": "Havrok",
-          "startTime": "19:00",
-          "endTime": "19:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Havrok+band",
-          "genre": "Rock"
-        },
-        {
-          "name": "The Ferrett Forgits",
-          "startTime": "20:00",
-          "endTime": "20:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=The+Ferrett+Forgits+band",
-          "genre": "Rock"
-        },
-        {
-          "name": "Wandering of a Blackheart",
-          "startTime": "21:00",
-          "endTime": "21:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Wandering+of+a+Blackheart+band",
-          "genre": "Alternative"
+          "time": "8:00",
+          "band": "the forest forgets",
+          "venue": "City Tire",
+          "note": "End with crushing doom/post-metal atmospherics"
         }
       ]
     },
     {
-      "id": "gallery-alley",
-      "name": "Gallery Alley",
-      "color": "#a0522d",
-      "mapsQuery": "Gallery+Alley+Keene+NH",
-      "pattern": "vertical-lines",
-      "bands": [
+      "id": "new-england-favorites",
+      "name": "New England Legends Tour",
+      "description": "Character and history - catch the iconic New England rock and punk acts",
+      "emoji": "🏔️",
+      "schedule": [
         {
-          "name": "Jason Ristiglus",
-          "startTime": "12:15",
-          "endTime": "13:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Jason+Ristiglus+band",
-          "genre": "Folk"
+          "time": "1:15",
+          "band": "Horsefly Gulch",
+          "venue": "Gallery Alley",
+          "note": "Rootsy retro-rock/folk/jam to start your day"
         },
         {
-          "name": "JJ Swatt Jr",
-          "startTime": "13:15",
-          "endTime": "14:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=JJ+Swatt+Jr+band",
-          "genre": "Jazz"
+          "time": "2:15",
+          "band": "Pointless Culture",
+          "venue": "Gallery Alley",
+          "note": "NH indie rock with a strong catalog"
         },
         {
-          "name": "A Band By A Damson",
-          "startTime": "14:15",
-          "endTime": "15:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=A+Band+By+A+Damson+band",
-          "genre": "Experimental"
+          "time": "4:00",
+          "band": "Jonee Earthquake Band",
+          "venue": "Black Cloud",
+          "note": "NH punk legends since 1979 - don't miss!"
         },
         {
-          "name": "Reckless Culture",
-          "startTime": "14:15",
-          "endTime": "15:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Reckless+Culture+band",
-          "genre": "Jazz"
+          "time": "6:00",
+          "band": "Champlain Shoregasm",
+          "venue": "Black Cloud",
+          "note": "Unique New England energy"
         },
         {
-          "name": "Ryan Wells",
-          "startTime": "15:15",
-          "endTime": "16:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Ryan+Wells+band",
-          "genre": "Alternative"
-        },
-        {
-          "name": "It Be Lovin",
-          "startTime": "16:15",
-          "endTime": "17:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=It+Be+Lovin+band",
-          "genre": "Jazz"
-        },
-        {
-          "name": "Chrocks",
-          "startTime": "16:15",
-          "endTime": "18:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Chrocks+band",
-          "genre": "Electronic"
-        },
-        {
-          "name": "Ashley Saint brand",
-          "startTime": "18:15",
-          "endTime": "19:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Ashley+Saint+brand+band",
-          "genre": "Alternative"
+          "time": "8:30",
+          "band": "Jennifer Tefft & The Strange",
+          "venue": "Black Cloud",
+          "note": "2024 New England Music Awards Album of the Year winners"
         }
       ]
     },
     {
-      "id": "monadnock",
-      "name": "Monadnock Food Co-op",
-      "color": "#d4a574",
-      "mapsQuery": "Monadnock+Food+Co-op+Keene+NH",
-      "pattern": "crosshatch",
-      "bands": [
+      "id": "venue-explorer",
+      "name": "7-Venue Discovery Tour",
+      "description": "Hit all 7 stages for maximum variety and unexpected finds",
+      "emoji": "🗺️",
+      "schedule": [
         {
-          "name": "Kevin Brown",
-          "startTime": "10:30",
-          "endTime": "11:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Kevin+Brown+band",
-          "genre": "Folk"
+          "time": "12:00",
+          "band": "Cole Phillips & The Early Morning Weather",
+          "venue": "City Tire",
+          "note": "Start at City Tire"
         },
         {
-          "name": "Jess Hutchens",
-          "startTime": "11:45",
-          "endTime": "12:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Jess+Hutchens+band",
-          "genre": "Acoustic"
+          "time": "1:15",
+          "band": "Horsefly Gulch",
+          "venue": "Gallery Alley",
+          "note": "Walk to Gallery Alley for rootsy rock"
         },
         {
-          "name": "Seth Connelly",
-          "startTime": "13:00",
-          "endTime": "14:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Seth+Connelly+band",
-          "genre": "Folk"
+          "time": "2:00",
+          "band": "Congregation X",
+          "venue": "Railroad Sq.",
+          "note": "Outdoor stage at Railroad Square"
         },
         {
-          "name": "Magickal Heynotes",
-          "startTime": "14:15",
-          "endTime": "15:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Magickal+Heynotes+band",
-          "genre": "Experimental"
+          "time": "3:00",
+          "band": "Marcus' Meercats",
+          "venue": "Monadnock Food Co-op",
+          "note": "Food Co-op - grab a snack"
         },
         {
-          "name": "Maroon Massacals",
-          "startTime": "15:00",
-          "endTime": "16:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Maroon+Massacals+band",
-          "genre": "Acoustic"
+          "time": "4:30",
+          "band": "Hobo Wizard",
+          "venue": "Lamson Street",
+          "note": "Lamson Street for something different"
         },
         {
-          "name": "Eve Pierce",
-          "startTime": "16:15",
-          "endTime": "17:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Eve+Pierce+band",
-          "genre": "Jazz"
+          "time": "6:00",
+          "band": "Lobotomobile",
+          "venue": "Railroad Sq.",
+          "note": "Festival favorite at Railroad Square"
         },
         {
-          "name": "Riley Walled",
-          "startTime": "17:30",
-          "endTime": "18:30",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Riley+Walled+band",
-          "genre": "Acoustic"
-        }
-      ]
-    },
-    {
-      "id": "chesterss",
-      "name": "Chester's",
-      "color": "#8b4513",
-      "mapsQuery": "Chester's+Keene+NH",
-      "pattern": "dot-matrix",
-      "bands": [
-        {
-          "name": "Emma Robinson",
-          "startTime": "11:00",
-          "endTime": "12:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Emma+Robinson+band",
-          "genre": "Acoustic"
-        },
-        {
-          "name": "Crazy Nixon",
-          "startTime": "12:30",
-          "endTime": "13:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Crazy+Nixon+band",
-          "genre": "Acoustic"
-        },
-        {
-          "name": "Ian Shelby",
-          "startTime": "13:30",
-          "endTime": "14:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Ian+Shelby+band",
-          "genre": "Acoustic"
-        },
-        {
-          "name": "Lyla Hutchins",
-          "startTime": "14:30",
-          "endTime": "15:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Lyla+Hutchins+band",
-          "genre": "Acoustic"
-        },
-        {
-          "name": "Natalie Raccoon",
-          "startTime": "15:30",
-          "endTime": "16:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Natalie+Raccoon+band",
-          "genre": "Acoustic"
-        },
-        {
-          "name": "Angela Semwell",
-          "startTime": "16:30",
-          "endTime": "17:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Angela+Semwell+band",
-          "genre": "Acoustic"
-        }
-      ]
-    },
-    {
-      "id": "railroad",
-      "name": "Railroad Sq.",
-      "color": "#6b8e23",
-      "mapsQuery": "Railroad+Square+Keene+NH",
-      "pattern": "grid",
-      "bands": [
-        {
-          "name": "Coochie Coochie",
-          "startTime": "12:00",
-          "endTime": "12:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Coochie+Coochie+band",
-          "genre": "Alternative"
-        },
-        {
-          "name": "JD & The Stevenssons",
-          "startTime": "12:00",
-          "endTime": "12:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=JD+The+Stevenssons+band",
-          "genre": "Alternative"
-        },
-        {
-          "name": "Congregation X",
-          "startTime": "13:00",
-          "endTime": "13:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Congregation+X+band",
-          "genre": "Indie"
-        },
-        {
-          "name": "HWDBS",
-          "startTime": "14:00",
-          "endTime": "14:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=HWDBS+band",
-          "genre": "Alternative"
-        },
-        {
-          "name": "The Upstart Crows",
-          "startTime": "14:00",
-          "endTime": "14:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=The+Upstart+Crows+band",
-          "genre": "Indie"
-        },
-        {
-          "name": "Michael James",
-          "startTime": "15:00",
-          "endTime": "15:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Michael+James+band",
-          "genre": "Indie"
-        },
-        {
-          "name": "Vote Evil",
-          "startTime": "17:00",
-          "endTime": "18:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Vote+Evil+band",
-          "genre": "Rock"
-        },
-        {
-          "name": "Lowdowndale",
-          "startTime": "18:00",
-          "endTime": "19:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Lowdowndale+band",
-          "genre": "Alternative"
-        },
-        {
-          "name": "Tenderhooks",
-          "startTime": "19:30",
-          "endTime": "20:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Tenderhooks+band",
-          "genre": "Alternative"
-        },
-        {
-          "name": "Dan Blakeslee",
-          "startTime": "20:30",
-          "endTime": "21:30",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Dan+Blakeslee+band",
-          "genre": "Folk"
-        }
-      ]
-    },
-    {
-      "id": "lamson",
-      "name": "Lamson Street",
-      "color": "#cd853f",
-      "mapsQuery": "Lamson+Street+Keene+NH",
-      "pattern": "diagonal-crosshatch",
-      "bands": [
-        {
-          "name": "Ringo",
-          "startTime": "12:00",
-          "endTime": "13:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Ringo+band",
-          "genre": "Alternative"
-        },
-        {
-          "name": "Alshel Underground",
-          "startTime": "12:30",
-          "endTime": "13:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Alshel+Underground+band",
-          "genre": "Alternative"
-        },
-        {
-          "name": "Brock Jackson",
-          "startTime": "13:30",
-          "endTime": "14:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Brock+Jackson+band",
-          "genre": "Alternative"
-        },
-        {
-          "name": "Shmy New Toys",
-          "startTime": "14:30",
-          "endTime": "15:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Shmy+New+Toys+band",
-          "genre": "Alternative"
-        },
-        {
-          "name": "Dirty Frizzy",
-          "startTime": "15:30",
-          "endTime": "16:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Dirty+Frizzy+band",
-          "genre": "Electronic"
-        },
-        {
-          "name": "Lava Sun",
-          "startTime": "16:30",
-          "endTime": "17:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Lava+Sun+band",
-          "genre": "Electronic"
-        },
-        {
-          "name": "Halko",
-          "startTime": "17:30",
-          "endTime": "18:30",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Halko+band",
-          "genre": "Electronic"
-        },
-        {
-          "name": "Mint Grinch",
-          "startTime": "18:45",
-          "endTime": "19:30",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Mint+Grinch+band",
-          "genre": "Jazz"
-        }
-      ]
-    },
-    {
-      "id": "black-clover",
-      "name": "Black Clover",
-      "color": "#556b2f",
-      "mapsQuery": "Black+Clover+Keene+NH",
-      "pattern": "multi-angle",
-      "bands": [
-        {
-          "name": "The Snooze Allot",
-          "startTime": "12:00",
-          "endTime": "12:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=The+Snooze+Allot+band",
-          "genre": "Experimental"
-        },
-        {
-          "name": "Rage To Slitchez",
-          "startTime": "12:45",
-          "endTime": "13:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Rage+To+Slitchez+band",
-          "genre": "Rock"
-        },
-        {
-          "name": "The Wagon",
-          "startTime": "13:30",
-          "endTime": "14:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=The+Wagon+band",
-          "genre": "Experimental"
-        },
-        {
-          "name": "Dizam",
-          "startTime": "14:45",
-          "endTime": "15:45",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Dizam+band",
-          "genre": "Experimental"
-        },
-        {
-          "name": "Jaime Earthquake",
-          "startTime": "16:00",
-          "endTime": "17:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Jaime+Earthquake+band",
-          "genre": "Experimental"
-        },
-        {
-          "name": "Lesh Reynolds",
-          "startTime": "17:15",
-          "endTime": "18:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Lesh+Reynolds+band",
-          "genre": "Experimental"
-        },
-        {
-          "name": "Sunogram",
-          "startTime": "18:15",
-          "endTime": "19:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Sunogram+band",
-          "genre": "Experimental"
-        },
-        {
-          "name": "Ba Da Ya Maniam",
-          "startTime": "18:15",
-          "endTime": "19:00",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Ba+Da+Ya+Maniam+band",
-          "genre": "Experimental"
-        },
-        {
-          "name": "Dave Smisel",
-          "startTime": "19:15",
-          "endTime": "20:15",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Dave+Smisel+band",
-          "genre": "Experimental"
-        },
-        {
-          "name": "Cary Overbilt & Jennifer Hell",
-          "startTime": "20:30",
-          "endTime": "21:30",
-          "youtubeLink": "https://www.youtube.com/results?search_query=Cary+Overbilt+Jennifer+Hell+band",
-          "genre": "Experimental"
+          "time": "8:30",
+          "band": "Jennifer Tefft & The Strange",
+          "venue": "Black Cloud",
+          "note": "End at Black Cloud with award winners"
         }
       ]
     }
   ],
-  "genres": {
-    "Rock": ["Havrok", "The Ferrett Forgits", "Dead By Sunrise", "Rage To Slitchez", "Vote Evil"],
-    "Folk": ["Morning Weather", "Three Tea Emmy", "Jason Ristiglus", "Kevin Brown", "Seth Connelly", "Dan Blakeslee"],
-    "Indie": ["Vibe Mo", "A Bunch Of Jerks", "Dibert", "Congregation X", "The Upstart Crows", "Michael James"],
-    "Electronic": ["Boogey And Overshed", "Chrocks", "Lava Sun", "Dirty Frizzy", "Halko"],
-    "Jazz": ["JJ Swatt Jr", "Reckless Culture", "It Be Lovin", "Eve Pierce", "Mint Grinch"],
-    "Acoustic": ["Emma Robinson", "Crazy Nixon", "Ian Shelby", "Lyla Hutchins", "Natalie Raccoon", "Angela Semwell", "Jess Hutchens", "Maroon Massacals", "Riley Walled"],
-    "Alternative": ["Wandering of a Blackheart", "Ashley Saint brand", "Ryan Wells", "Coochie Coochie", "JD & The Stevenssons", "HWDBS", "Lowdowndale", "Tenderhooks", "Ringo", "Alshel Underground", "Brock Jackson", "Shmy New Toys"],
-    "Experimental": ["Olde Myths In The Raw", "A Band By A Damson", "The Snooze Allot", "The Wagon", "Dizam", "Jaime Earthquake", "Lesh Reynolds", "Sunogram", "Ba Da Ya Maniam", "Dave Smisel", "Cary Overbilt & Jennifer Hell", "Magickal Heynotes"]
-  },
-  "links": {
-    "exploreKeene": "https://explorekeene.org/",
-    "monadnockRegion": "https://www.monadnocknh.com/"
+  "research": {
+    "updated": "2026-09-04",
+    "method": "Festival schedule cross-checked against current local coverage; artist pages/music sources verified where a reliable match was found. Search links are provided for acts without a confidently verified direct artist page.",
+    "sources": [
+      "https://www.magic102.com/news/local/keene-music-festival-sets-return-for-sept-5-across-downtown/",
+      "https://mykeenenow.com/news/219912-keene-music-festival-returns-saturday-with-seven-stages-dozens-of-local-acts/",
+      "https://monadnockfood.coop/event/keene-music-fest-2026/"
+    ]
   }
 }
